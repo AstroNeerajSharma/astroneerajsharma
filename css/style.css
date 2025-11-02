@@ -13,3 +13,35 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair Display', serif;
 }
+
+
+/* --- NEW STYLES FOR FAQ DROPDOWNS --- */
+
+/* Hide the default arrow */
+details summary {
+    list-style: none;
+}
+details summary::-webkit-details-marker {
+    display: none;
+}
+
+/* Style for the answer */
+details > .faq-answer {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+details[open] > .faq-answer {
+    opacity: 1;
+}
+
+/* Style for the + / - icon */
+details:not([open]) .faq-icon {
+    transform: rotate(0deg);
+    transition: transform 0.3s ease-in-out;
+}
+details[open] .faq-icon {
+    transform: rotate(45deg);
+    transition: transform 0.3s ease-in-out;
+}
+
