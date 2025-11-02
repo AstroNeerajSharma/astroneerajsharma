@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- EDIT: Updated Title -->
     <title>Astro Neeraj Sharma</title>
     
     <!-- Load Tailwind CSS -->
@@ -35,10 +34,6 @@
             },
         }
     </script>
-    <!-- 
-      I have moved the custom <style> rules to the new 'css/style.css' file.
-      This keeps your HTML file clean.
-    -->
 </head>
 <body class="bg-brand-deep-blue text-brand-light-gray antialiased">
 
@@ -49,15 +44,17 @@
                 <!-- Business Name/Logo -->
                 <div class="flex-shrink-0">
                     <a href="#" class="text-2xl font-bold text-white font-serif">
-                        <!-- EDIT: Replace with your father's business name -->
                         Astro Neeraj Sharma
                     </a>
                 </div>
                 
-                <!-- Navigation Links -->
+                <!-- Navigation Links -- UPDATED -->
                 <div class="hidden sm:flex sm:space-x-8">
                     <a href="#about" class="text-brand-light-gray hover:text-brand-gold inline-flex items-center px-1 pt-1 text-sm font-medium">About</a>
                     <a href="#services" class="text-brand-light-gray hover:text-brand-gold inline-flex items-center px-1 pt-1 text-sm font-medium">Services</a>
+                    <!-- NEW LINKS ADDED -->
+                    <a href="#testimonials" class="text-brand-light-gray hover:text-brand-gold inline-flex items-center px-1 pt-1 text-sm font-medium">Testimonials</a>
+                    <a href="#faq" class="text-brand-light-gray hover:text-brand-gold inline-flex items-center px-1 pt-1 text-sm font-medium">FAQ</a>
                     <a href="#contact" class="text-brand-light-gray hover:text-brand-gold inline-flex items-center px-1 pt-1 text-sm font-medium">Contact</a>
                 </div>
             </div>
@@ -71,12 +68,10 @@
 
         <div class="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-24 md:py-32 text-center relative z-10">
             <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight">
-                <!-- EDIT: Main headline -->
                 Guiding Your Path With the Stars
             </h1>
             <p class="mt-6 text-lg md:text-xl text-brand-light-gray max-w-3xl mx-auto">
-                <!-- EDIT: A brief one-sentence description of the business -->
-                Expert in Vedic Astrology, vastu, Numerology, and Personalized Horoscopes.
+                Expert in Vedic Astrology, Vastu, Numerology, and Personalized Horoscopes.
             </p>
             <a href="#contact" class="mt-8 inline-block bg-brand-gold text-brand-deep-blue font-medium py-3 px-8 rounded-lg shadow-lg hover:bg-yellow-500 transition duration-300">
                 Book a Consultation
@@ -91,26 +86,25 @@
                 <!-- About Image -->
                 <div>
                     <!-- 
-                      EDIT: Replace this placeholder. 
-                      You can now add your photo to the 'assets/images' folder (e.g., 'father-photo.jpg')
-                      and change the src to: src="assets/images/father-photo.jpg"
+                      EDIT: I've updated the path.
+                      Please add your photo as 'astro-neeraj-sharma.jpg'
+                      inside your 'assets/images/' folder.
                     -->
-                    <img src="https://placehold.co/600x400/1e293b/b0c4de?text=Photo+of+Astrologer" 
-                         alt="A professional headshot of the astrologer" 
+                    <img src="assets/images/astro-neeraj-sharma.jpg" 
+                         alt="A professional headshot of Astrologer Neeraj Sharma"
+                         onerror="this.src='https://placehold.co/600x400/1e293b/b0c4de?text=Photo+of+Astrologer'"
                          class="rounded-lg shadow-xl w-full h-auto object-cover aspect-video border-4 border-brand-gold/30">
                 </div>
                 
                 <!-- About Text -->
                 <div class="md:pl-8">
-                    <h2 class="text-3xl font-bold text-white">Pt. Neeraj Guruji</h2>
+                    <h2 class="text-3xl font-bold text-white">Astro Neeraj Sharma (Patan Wale Guruji)</h2>
                     <p class="mt-4 text-lg text-brand-light-gray">
-                        <!-- EDIT: Write a paragraph about your father's background, mission, or business history. -->
                         Welcome! I'm Neeraj Sharma, an astrologer based in Indore. 
                         With a passion for celestial wisdom and a commitment to genuine guidance, I've spent the last [X] years 
                         helping clients find clarity and navigate their life's journey.
                     </p>
                     <p class="mt-4 text-lg text-brand-light-gray">
-                        <!-- EDIT: Add another paragraph if needed. -->
                         My practice is built on a foundation of ancient knowledge and intuitive understanding. 
                         I believe in empowering you with insights to make informed decisions.
                     </p>
@@ -125,7 +119,6 @@
             <div class="text-center">
                 <h2 class="text-3xl font-bold text-white">My Services</h2>
                 <p class="mt-4 text-lg text-brand-light-gray max-w-2xl mx-auto">
-                    <!-- EDIT: A brief intro to the services -->
                     Discover the insights the universe holds for you.
                 </p>
             </div>
@@ -135,11 +128,9 @@
                 <!-- Service Card 1 -->
                 <div class="bg-brand-deep-blue/50 backdrop-blur-sm p-8 rounded-lg shadow-lg border border-brand-gold/30 transition-all duration-300 hover:shadow-brand-gold/20 hover:shadow-2xl">
                     <h3 class="text-2xl font-bold text-brand-gold">
-                        <!-- EDIT: Service 1 Title -->
-                        Vedic Astrology Reading
+                        Kundali Reading
                     </h3>
                     <p class="mt-4 text-brand-light-gray">
-                        <!-- EDIT: Service 1 Description -->
                         An in-depth analysis of your birth chart to understand your life's purpose, challenges, and opportunities.
                     </p>
                 </div>
@@ -147,11 +138,9 @@
                 <!-- Service Card 2 -->
                 <div class="bg-brand-deep-blue/50 backdrop-blur-sm p-8 rounded-lg shadow-lg border border-brand-gold/30 transition-all duration-300 hover:shadow-brand-gold/20 hover:shadow-2xl">
                     <h3 class="text-2xl font-bold text-brand-gold">
-                        <!-- EDIT: Service 2 Title -->
-                        Tarot Card Reading
+                        Kundali Milan
                     </h3>
                     <p class="mt-4 text-brand-light-gray">
-                        <!-- EDIT: Service 2 Description -->
                         Gain clarity on specific questions or life situations through the intuitive wisdom of the tarot.
                     </p>
                 </div>
@@ -159,14 +148,139 @@
                 <!-- Service Card 3 -->
                 <div class="bg-brand-deep-blue/50 backdrop-blur-sm p-8 rounded-lg shadow-lg border border-brand-gold/30 transition-all duration-300 hover:shadow-brand-gold/20 hover:shadow-2xl">
                     <h3 class="text-2xl font-bold text-brand-gold">
-                        <!-- EDIT: Service 3 Title -->
-                        Horoscope Matching
+                        Numerology
                     </h3>
                     <p class="mt-4 text-brand-light-gray">
-                        <!-- EDIT: Service 3 Description -->
                         Understand relationship compatibility for marriage or business partnerships through detailed chart comparison.
                     </p>
                 </div>
+
+                <!-- NEW Service Card 4 -->
+                <div class="bg-brand-deep-blue/50 backdrop-blur-sm p-8 rounded-lg shadow-lg border border-brand-gold/30 transition-all duration-300 hover:shadow-brand-gold/20 hover:shadow-2xl">
+                    <h3 class="text-2xl font-bold text-brand-gold">
+                        <!-- EDIT: Service 4 Title -->
+                        Vastu Consultation
+                    </h3>
+                    <p class="mt-4 text-brand-light-gray">
+                        <!-- EDIT: Service 4 Description -->
+                        Align your home or office with cosmic energy to promote harmony, prosperity, and well-being for your family or business.
+                    </p>
+                </div>
+
+                <!-- NEW Service Card 5 -->
+                <div class="bg-brand-deep-blue/50 backdrop-blur-sm p-8 rounded-lg shadow-lg border border-brand-gold/30 transition-all duration-300 hover:shadow-brand-gold/20 hover:shadow-2xl">
+                    <h3 class="text-2xl font-bold text-brand-gold">
+                        <!-- EDIT: Service 5 Title -->
+                        Face Reading
+                    </h3>
+                    <p class="mt-4 text-brand-light-gray">
+                        <!-- EDIT: Service 5 Description -->
+                        Discover the hidden meanings in your name and birth date. Understand your personality, strengths, and life path through the science of numbers.
+                    </p>
+                </div>
+
+                <!-- NEW Service Card 6 -->
+                <div class="bg-brand-deep-blue/50 backdrop-blur-sm p-8 rounded-lg shadow-lg border border-brand-gold/30 transition-all duration-300 hover:shadow-brand-gold/20 hover:shadow-2xl">
+                    <h3 class="text-2xl font-bold text-brand-gold">
+                        <!-- EDIT: Service 6 Title -->
+                        Gemstone Recommendation
+                    </h3>
+                    <p class="mt-4 text-brand-light-gray">
+                        <!-- EDIT: Service 6 Description -->
+                        Based on your unique birth chart, find the specific gemstone that can help balance your energies, strengthen your planets, and attract positive outcomes.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW Testimonials Section -->
+    <section id="testimonials" class="py-20 md:py-28 bg-brand-deep-blue/80 backdrop-blur-sm">
+        <div class="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-bold text-white">What My Clients Say</h2>
+                <p class="mt-4 text-lg text-brand-light-gray max-w-2xl mx-auto">
+                    <!-- EDIT: Subtitle for testimonials -->
+                    Feedback from people I've had the privilege to guide.
+                </p>
+            </div>
+            
+            <!-- Testimonial Cards -->
+            <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Testimonial Card 1 -->
+                <div class="bg-brand-deep-blue/50 p-8 rounded-lg shadow-lg border border-brand-gold/30">
+                    <p class="text-lg text-brand-light-gray italic">
+                        <!-- EDIT: Add a real testimonial quote -->
+                        "Neeraj Guruji's reading was incredibly accurate. I felt a sense of clarity I hadn't felt in years. Highly recommend his guidance."
+                    </p>
+                    <p class="mt-4 text-xl font-bold text-brand-gold">
+                        <!-- EDIT: Add the client's name -->
+                        - A. K. Sharma
+                    </p>
+                </div>
+                
+                <!-- Testimonial Card 2 -->
+                <div class="bg-brand-deep-blue/50 p-8 rounded-lg shadow-lg border border-brand-gold/30">
+                    <p class="text-lg text-brand-light-gray italic">
+                        <!-- EDIT: Add a real testimonial quote -->
+                        "The Vastu consultation for my new office made a tangible difference. The energy feels much better. Thank you, Guruji."
+                    </p>
+                    <p class="mt-4 text-xl font-bold text-brand-gold">
+                        <!-- EDIT: Add the client's name -->
+                        - R. Patel
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW FAQ Section -->
+    <section id="faq" class="py-20 md:py-28 bg-brand-deep-blue">
+        <div class="container mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-bold text-white">Frequently Asked Questions</h2>
+            </div>
+            
+            <!-- Q&A List -->
+            <div class="mt-16 space-y-8">
+                
+                <!-- Q1 -->
+                <div>
+                    <h3 class="text-2xl font-bold text-brand-gold">
+                        <!-- EDIT: Question 1 -->
+                        What do I need for a reading?
+                    </h3>
+                    <p class="mt-2 text-lg text-brand-light-gray">
+                        <!-- EDIT: Answer 1 -->
+                        For a detailed Vedic reading, I will require your exact date of birth, time of birth, and place of birth. For other readings, we can discuss the requirements during our initial contact.
+                    </p>
+                </div>
+                
+                <!-- Q2 -->
+                <div>
+                    <h3 class="text-2xl font-bold text-brand-gold">
+                        <!-- EDIT: Question 2 -->
+                        Are my readings confidential?
+                    </h3>
+                    <p class="mt-2 text-lg text-brand-light-gray">
+                        <!-- EDIT: Answer 2 -->
+                        Absolutely. All consultations and personal information are treated with the utmost privacy and confidentiality. Your trust is my priority.
+                    </V>
+                </div>
+                
+                <!-- Q3 -->
+                <div>
+                    <h3 class="text-2xl font-bold text-brand-gold">
+                        <!-- EDIT: Question 3 -->
+                        How do I book and pay for a consultation?
+                    </h3>
+                    <p class="mt-2 text-lg text-brand-light-gray">
+                        <!-- EDIT: Answer 3 -->
+                        You can book by calling or emailing me at the contact details below. Payment details and methods (like UPI or bank transfer) will be provided once we confirm the booking.
+                    </p>
+                </div>
+                
             </div>
         </div>
     </section>
@@ -176,18 +290,16 @@
         <div class="container mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
             <h2 class="text-3xl md:text-4xl font-bold">Begin Your Journey</h2>
             <p class="mt-4 text-lg md:text-xl text-gray-800">
-                <!-- EDIT: Call to action message -->
                 Ready to find clarity? Reach out to schedule your consultation.
-            </p>
+            </I>
             
             <div class="mt-8">
-                <p class="text-xl font-medium">
-                    <!-- EDIT: Add your father's email -->
-                    Email: <a href="neeraj1375sharma@gmail.com" class="underline hover:text-gray-900">email@patanwaleguruji.com</a>
-                </p>
                 <p class="mt-2 text-xl font-medium">
-                    <!-- EDIT: Add your father's phone number (optional) -->
                     Phone: +91-7987909015, +91-9755513500
+                </p>
+                <p class="text-xl font-medium">
+                    <!-- FIX: Added 'mailto:' and matched the link text -->
+                    Email: <a href="mailto:neeraj1375sharma@gmail.com" class="underline hover:text-gray-900">neeraj1375sharma@gmail.com</a>
                 </p>
             </div>
         </div>
@@ -197,7 +309,6 @@
     <footer class="bg-gray-900 text-gray-400">
         <div class="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8 text-center">
             <p class="text-sm">
-                <!-- EDIT: Update the year and name -->
                 &copy; 2025 Astro Neeraj Sharma. All rights reserved.
             </p>
         </div>
@@ -205,4 +316,3 @@
 
 </body>
 </html>
-
