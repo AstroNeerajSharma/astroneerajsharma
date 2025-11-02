@@ -48,15 +48,45 @@
                     </a>
                 </div>
                 
-                <!-- Navigation Links -- UPDATED -->
-                <div class="hidden sm:flex sm:space-x-8">
-                    <a href="#about" class="text-brand-light-gray hover:text-brand-gold inline-flex items-center px-1 pt-1 text-sm font-medium">About</a>
-                    <a href="#services" class="text-brand-light-gray hover:text-brand-gold inline-flex items-center px-1 pt-1 text-sm font-medium">Services</a>
-                    <!-- NEW LINKS ADDED -->
-                    <a href="#testimonials" class="text-brand-light-gray hover:text-brand-gold inline-flex items-center px-1 pt-1 text-sm font-medium">Testimonials</a>
-                    <a href="#faq" class="text-brand-light-gray hover:text-brand-gold inline-flex items-center px-1 pt-1 text-sm font-medium">FAQ</a>
-                    <a href="#contact" class="text-brand-light-gray hover:text-brand-gold inline-flex items-center px-1 pt-1 text-sm font-medium">Contact</a>
+                <!-- Desktop Navigation Links -->
+                <div class="hidden sm:flex sm:items-center sm:space-x-6">
+                    <a href="#about" class="text-brand-light-gray hover:text-brand-gold px-1 pt-1 text-sm font-medium">About</a>
+                    <a href="#services" class="text-brand-light-gray hover:text-brand-gold px-1 pt-1 text-sm font-medium">Services</a>
+                    <a href="#testimonials" class="text-brand-light-gray hover:text-brand-gold px-1 pt-1 text-sm font-medium">Testimonials</a>
+                    <a href="#contact" class="text-brand-light-gray hover:text-brand-gold px-1 pt-1 text-sm font-medium">Contact</a>
+                    <a href="#faq" class="text-brand-light-gray hover:text-brand-gold px-1 pt-1 text-sm font-medium">FAQ</a>
+                    <!-- NEW Phone Number -->
+                    <span class="text-brand-gold font-medium text-sm">
+                        +91-7987909015
+                    </span>
                 </div>
+
+                <!-- Mobile Hamburger Button -->
+                <div class="flex items-center sm:hidden">
+                    <button id="mobile-menu-button" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-brand-light-gray hover:text-white hover:bg-brand-gold/20 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-brand-gold" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <!-- Icon when menu is closed. -->
+                        <svg id="menu-icon-closed" class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                        <!-- Icon when menu is open. -->
+                        <svg id="menu-icon-open" class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu, show/hide based on menu state. -->
+        <div class="sm:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#about" class="text-brand-light-gray hover:bg-brand-gold/20 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
+                <a href="#services" class="text-brand-light-gray hover:bg-brand-gold/20 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Services</a>
+                <a href="#testimonials" class="text-brand-light-gray hover:bg-brand-gold/20 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Testimonials</a>
+                <a href="#contact" class="text-brand-light-gray hover:bg-brand-gold/20 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+                <a href="#faq" class="text-brand-light-gray hover:bg-brand-gold/20 hover:text-white block px-3 py-2 rounded-md text-base font-medium">FAQ</a>
+                <a href="tel:+917987909015" class="text-brand-gold block px-3 py-2 rounded-md text-base font-medium">Call: +91-7987909015</a>
             </div>
         </div>
     </nav>
@@ -158,11 +188,9 @@
                 <!-- NEW Service Card 4 -->
                 <div class="bg-brand-deep-blue/50 backdrop-blur-sm p-8 rounded-lg shadow-lg border border-brand-gold/30 transition-all duration-300 hover:shadow-brand-gold/20 hover:shadow-2xl">
                     <h3 class="text-2xl font-bold text-brand-gold">
-                        <!-- EDIT: Service 4 Title -->
                         Vastu Consultation
                     </h3>
                     <p class="mt-4 text-brand-light-gray">
-                        <!-- EDIT: Service 4 Description -->
                         Align your home or office with cosmic energy to promote harmony, prosperity, and well-being for your family or business.
                     </p>
                 </div>
@@ -170,11 +198,9 @@
                 <!-- NEW Service Card 5 -->
                 <div class="bg-brand-deep-blue/50 backdrop-blur-sm p-8 rounded-lg shadow-lg border border-brand-gold/30 transition-all duration-300 hover:shadow-brand-gold/20 hover:shadow-2xl">
                     <h3 class="text-2xl font-bold text-brand-gold">
-                        <!-- EDIT: Service 5 Title -->
                         Face Reading
                     </h3>
                     <p class="mt-4 text-brand-light-gray">
-                        <!-- EDIT: Service 5 Description -->
                         Discover the hidden meanings in your name and birth date. Understand your personality, strengths, and life path through the science of numbers.
                     </p>
                 </div>
@@ -182,11 +208,9 @@
                 <!-- NEW Service Card 6 -->
                 <div class="bg-brand-deep-blue/50 backdrop-blur-sm p-8 rounded-lg shadow-lg border border-brand-gold/30 transition-all duration-300 hover:shadow-brand-gold/20 hover:shadow-2xl">
                     <h3 class="text-2xl font-bold text-brand-gold">
-                        <!-- EDIT: Service 6 Title -->
                         Gemstone Recommendation
                     </h3>
                     <p class="mt-4 text-brand-light-gray">
-                        <!-- EDIT: Service 6 Description -->
                         Based on your unique birth chart, find the specific gemstone that can help balance your energies, strengthen your planets, and attract positive outcomes.
                     </p>
                 </div>
@@ -200,7 +224,6 @@
             <div class="text-center">
                 <h2 class="text-3xl font-bold text-white">What My Clients Say</h2>
                 <p class="mt-4 text-lg text-brand-light-gray max-w-2xl mx-auto">
-                    <!-- EDIT: Subtitle for testimonials -->
                     Feedback from people I've had the privilege to guide.
                 </p>
             </div>
@@ -235,7 +258,51 @@
         </div>
     </section>
 
-    <!-- NEW FAQ Section -->
+    <!-- Contact & Google Form Section (Renamed from Contact) -->
+    <section id="contact" class="py-20 md:py-28 bg-brand-gold text-brand-deep-blue">
+        <div class="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold">Book a Consultation</h2>
+            <p class="mt-4 text-lg md:text-xl text-gray-800">
+                Ready to find clarity? Reach out directly or fill out the form below to schedule your consultation.
+            </I>
+            
+            <!-- NEW: Google Form Embed -->
+            <div class="mt-12 bg-white rounded-lg shadow-xl overflow-hidden">
+                <!-- 
+                  EDIT: 
+                  1. Go to your Google Form.
+                  2. Click "Send" in the top right.
+                  3. Go to the "< >" (Embed) tab.
+                  4. Copy the *ENTIRE* <iframe> code.
+                  5. Paste it here, replacing this placeholder iframe.
+                -->
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf559PnJLJ-YxSEprywyXHL9WyqKFu9dhOOYiBBR0FAJPJUiA/viewform?usp=publish-editor" 
+                        width="100%" 
+                        height="800" 
+                        frameborder="0" 
+                        marginheight="0" 
+                        marginwidth="0">
+                        Loading…
+                </iframe>
+            </div>
+
+            <!-- Direct Contact Info -->
+            <div class="mt-16">
+                <h3 class="text-2xl font-bold">Or Contact Me Directly</h3>
+                <div class="mt-6">
+                    <p class="text-xl font-medium">
+                        Email: <a href="mailto:neeraj1375sharma@gmail.com" class="underline hover:text-gray-900">neeraj1375sharma@gmail.com</a>
+                    </p>
+                    <p class="mt-2 text-xl font-medium">
+                        Phone: +91-7987909015, +91-9755513500
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FAQ Section (MOVED & UPDATED with Dropdowns) -->
     <section id="faq" class="py-20 md:py-28 bg-brand-deep-blue">
         <div class="container mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
             <div class="text-center">
@@ -243,67 +310,63 @@
             </div>
             
             <!-- Q&A List -->
-            <div class="mt-16 space-y-8">
+            <div class="mt-16 space-y-4">
                 
                 <!-- Q1 -->
-                <div>
-                    <h3 class="text-2xl font-bold text-brand-gold">
-                        <!-- EDIT: Question 1 -->
-                        What do I need for a reading?
-                    </h3>
-                    <p class="mt-2 text-lg text-brand-light-gray">
-                        <!-- EDIT: Answer 1 -->
-                        For a detailed Vedic reading, I will require your exact date of birth, time of birth, and place of birth. For other readings, we can discuss the requirements during our initial contact.
-                    </p>
-                </div>
+                <details class="bg-brand-deep-blue/50 border border-brand-gold/30 rounded-lg overflow-hidden">
+                    <summary class="faq-question cursor-pointer p-6 flex justify-between items-center">
+                        <h3 class="text-2xl font-bold text-brand-gold">
+                            <!-- EDIT: Question 1 -->
+                            What do I need for a reading?
+                        </h3>
+                        <span class="faq-icon text-brand-gold text-3xl font-bold">+</span>
+                    </summary>
+                    <div class="faq-answer p-6 pt-0">
+                        <p class="mt-2 text-lg text-brand-light-gray">
+                            <!-- EDIT: Answer 1 -->
+                            For a detailed Vedic reading, I will require your exact date of birth, time of birth, and place of birth. For other readings, we can discuss the requirements during our initial contact.
+                        </p>
+                    </div>
+                </details>
                 
                 <!-- Q2 -->
-                <div>
-                    <h3 class="text-2xl font-bold text-brand-gold">
-                        <!-- EDIT: Question 2 -->
-                        Are my readings confidential?
-                    </h3>
-                    <p class="mt-2 text-lg text-brand-light-gray">
-                        <!-- EDIT: Answer 2 -->
-                        Absolutely. All consultations and personal information are treated with the utmost privacy and confidentiality. Your trust is my priority.
-                    </V>
-                </div>
+                <details class="bg-brand-deep-blue/50 border border-brand-gold/30 rounded-lg overflow-hidden">
+                    <summary class="faq-question cursor-pointer p-6 flex justify-between items-center">
+                        <h3 class="text-2xl font-bold text-brand-gold">
+                            <!-- EDIT: Question 2 -->
+                            Are my readings confidential?
+                        </h3>
+                        <span class="faq-icon text-brand-gold text-3xl font-bold">+</span>
+                    </summary>
+                    <div class="faq-answer p-6 pt-0">
+                        <p class="mt-2 text-lg text-brand-light-gray">
+                            <!-- EDIT: Answer 2 -->
+                            Absolutely. All consultations and personal information are treated with the utmost privacy and confidentiality. Your trust is my priority.
+                        </p>
+                    </div>
+                </details>
                 
                 <!-- Q3 -->
-                <div>
-                    <h3 class="text-2xl font-bold text-brand-gold">
-                        <!-- EDIT: Question 3 -->
-                        How do I book and pay for a consultation?
-                    </h3>
-                    <p class="mt-2 text-lg text-brand-light-gray">
-                        <!-- EDIT: Answer 3 -->
-                        You can book by calling or emailing me at the contact details below. Payment details and methods (like UPI or bank transfer) will be provided once we confirm the booking.
-                    </p>
-                </div>
+                <details class="bg-brand-deep-blue/50 border border-brand-gold/30 rounded-lg overflow-hidden">
+                    <summary class="faq-question cursor-pointer p-6 flex justify-between items-center">
+                        <h3 class="text-2xl font-bold text-brand-gold">
+                            <!-- EDIT: Question 3 -->
+                            How do I book and pay for a consultation?
+                        </h3>
+                        <span class="faq-icon text-brand-gold text-3xl font-bold">+</span>
+                    </summary>
+                    <div class="faq-answer p-6 pt-0">
+                        <p class="mt-2 text-lg text-brand-light-gray">
+                            <!-- EDIT: Answer 3 -->
+                            You can book by calling or emailing me at the contact details below. Payment details and methods (like UPI or bank transfer) will be provided once we confirm the booking.
+                        </p>
+                    </div>
+                </details>
                 
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 md:py-28 bg-brand-gold text-brand-deep-blue">
-        <div class="container mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold">Begin Your Journey</h2>
-            <p class="mt-4 text-lg md:text-xl text-gray-800">
-                Ready to find clarity? Reach out to schedule your consultation.
-            </I>
-            
-            <div class="mt-8">
-                <p class="mt-2 text-xl font-medium">
-                    Phone: +91-7987909015, +91-9755513500
-                </p>
-                <p class="text-xl font-medium">
-                    <!-- FIX: Added 'mailto:' and matched the link text -->
-                    Email: <a href="mailto:neeraj1375sharma@gmail.com" class="underline hover:text-gray-900">neeraj1375sharma@gmail.com</a>
-                </p>
-            </div>
-        </div>
-    </section>
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-gray-400">
@@ -314,5 +377,28 @@
         </div>
     </footer>
 
+    <!-- Script for Mobile Menu -->
+    <script>
+        const menuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const iconClosed = document.getElementById('menu-icon-closed');
+        const iconOpen = document.getElementById('menu-icon-open');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            iconClosed.classList.toggle('hidden');
+            iconOpen.classList.toggle('hidden');
+        });
+
+        // Close menu when a link is clicked
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                iconClosed.classList.remove('hidden');
+                iconOpen.classList.add('hidden');
+            });
+        });
+    </script>
 </body>
 </html>
+
