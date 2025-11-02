@@ -3,16 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Astro Neeraj Sharma</title>
-    
+
+    <!-- UPDATED TITLE -->
+    <title>Astro Neeraj Sharma | India's No.1 Astrologer</title>
+
+    <!-- NEW META DESCRIPTION for SEO -->
+    <meta name="description" content="Expert in Vedic Astrology, Vastu, Numerology, and Personalized Horoscopes. Guiding your path with the stars.">
+
+    <!-- NEW INLINE FAVICON (ॐ Symbol) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22#d4af37%22>ॐ</text></svg>">
+
     <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- Load Inter font (still good, but also adding a more elegant serif font for headings) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    
+
     <!-- Link to your new external stylesheet -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -37,357 +45,357 @@
 </head>
 <body class="bg-brand-deep-blue text-brand-light-gray antialiased">
 
-    <!-- Header & Navigation Bar -->
-    <nav class="bg-brand-deep-blue/70 backdrop-blur-md shadow-lg sticky top-0 z-50 border-b border-brand-gold/20">
-        <div class="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-                <!-- Business Name/Logo -->
-                <div class="flex-shrink-0">
-                    <a href="#" class="text-2xl font-bold text-white font-serif">
-                        Astro Neeraj Sharma
-                    </a>
-                </div>
-                
-                <!-- Desktop Navigation Links -->
-                <div class="hidden sm:flex sm:items-center sm:space-x-6">
-                    <a href="#about" class="text-brand-light-gray hover:text-brand-gold px-1 pt-1 text-sm font-medium">About</a>
-                    <a href="#services" class="text-brand-light-gray hover:text-brand-gold px-1 pt-1 text-sm font-medium">Services</a>
-                    <a href="#testimonials" class="text-brand-light-gray hover:text-brand-gold px-1 pt-1 text-sm font-medium">Testimonials</a>
-                    <a href="#contact" class="text-brand-light-gray hover:text-brand-gold px-1 pt-1 text-sm font-medium">Contact</a>
-                    <a href="#faq" class="text-brand-light-gray hover:text-brand-gold px-1 pt-1 text-sm font-medium">FAQ</a>
-                    <!-- NEW Phone Number -->
-                    <span class="text-brand-gold font-medium text-sm">
+<!-- Header & Navigation Bar -->
+<nav class="bg-brand-deep-blue/70 backdrop-blur-md shadow-lg sticky top-0 z-50 border-b border-brand-gold/20">
+    <div class="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+            <!-- Business Name/Logo -->
+            <div class="flex-shrink-0">
+                <a href="#" class="text-2xl font-bold text-white font-serif">
+                    Astro Neeraj Sharma
+                </a>
+            </div>
+
+            <!-- Desktop Navigation Links -->
+            <div class="hidden sm:flex sm:items-center sm:space-x-6">
+                <a href="#about" class="text-brand-light-gray hover:text-brand-gold px-1 pt-1 text-sm font-medium">About</a>
+                <a href="#services" class="text-brand-light-gray hover:text-brand-gold px-1 pt-1 text-sm font-medium">Services</a>
+                <a href="#testimonials" class="text-brand-light-gray hover:text-brand-gold px-1 pt-1 text-sm font-medium">Testimonials</a>
+                <a href="#contact" class="text-brand-light-gray hover:text-brand-gold px-1 pt-1 text-sm font-medium">Contact</a>
+                <a href="#faq" class="text-brand-light-gray hover:text-brand-gold px-1 pt-1 text-sm font-medium">FAQ</a>
+                <!-- NEW Phone Number -->
+                <span class="text-brand-gold font-medium text-sm">
                         +91-7987909015
                     </span>
-                </div>
+            </div>
 
-                <!-- Mobile Hamburger Button -->
-                <div class="flex items-center sm:hidden">
-                    <button id="mobile-menu-button" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-brand-light-gray hover:text-white hover:bg-brand-gold/20 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-brand-gold" aria-controls="mobile-menu" aria-expanded="false">
-                        <span class="sr-only">Open main menu</span>
-                        <!-- Icon when menu is closed. -->
-                        <svg id="menu-icon-closed" class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                        </svg>
-                        <!-- Icon when menu is open. -->
-                        <svg id="menu-icon-open" class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                        </svg>
-                    </button>
-                </div>
+            <!-- Mobile Hamburger Button -->
+            <div class="flex items-center sm:hidden">
+                <button id="mobile-menu-button" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-brand-light-gray hover:text-white hover:bg-brand-gold/20 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-brand-gold" aria-controls="mobile-menu" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <!-- Icon when menu is closed. -->
+                    <svg id="menu-icon-closed" class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                    <!-- Icon when menu is open. -->
+                    <svg id="menu-icon-open" class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
             </div>
         </div>
+    </div>
 
-        <!-- Mobile Menu, show/hide based on menu state. -->
-        <div class="sm:hidden hidden" id="mobile-menu">
-            <div class="px-2 pt-2 pb-3 space-y-1">
-                <a href="#about" class="text-brand-light-gray hover:bg-brand-gold/20 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
-                <a href="#services" class="text-brand-light-gray hover:bg-brand-gold/20 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Services</a>
-                <a href="#testimonials" class="text-brand-light-gray hover:bg-brand-gold/20 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Testimonials</a>
-                <a href="#contact" class="text-brand-light-gray hover:bg-brand-gold/20 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
-                <a href="#faq" class="text-brand-light-gray hover:bg-brand-gold/20 hover:text-white block px-3 py-2 rounded-md text-base font-medium">FAQ</a>
-                <a href="tel:+917987909015" class="text-brand-gold block px-3 py-2 rounded-md text-base font-medium">Call: +91-7987909015</a>
+    <!-- Mobile Menu, show/hide based on menu state. -->
+    <div class="sm:hidden hidden" id="mobile-menu">
+        <div class="px-2 pt-2 pb-3 space-y-1">
+            <a href="#about" class="text-brand-light-gray hover:bg-brand-gold/20 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
+            <a href="#services" class="text-brand-light-gray hover:bg-brand-gold/20 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Services</a>
+            <a href="#testimonials" class="text-brand-light-gray hover:bg-brand-gold/20 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Testimonials</a>
+            <a href="#contact" class="text-brand-light-gray hover:bg-brand-gold/20 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            <a href="#faq" class="text-brand-light-gray hover:bg-brand-gold/20 hover:text-white block px-3 py-2 rounded-md text-base font-medium">FAQ</a>
+            <a href="tel:+917987909015" class="text-brand-gold block px-3 py-2 rounded-md text-base font-medium">Call: +91-7987909015</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="bg-brand-deep-blue relative overflow-hidden">
+    <!-- Optional: subtle star-like background effect -->
+    <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#fff 1px, transparent 1px); background-size: 20px 20px;"></div>
+
+    <div class="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-24 md:py-32 text-center relative z-10">
+        <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight">
+            Guiding Your Path With the Stars
+        </h1>
+        <p class="mt-6 text-lg md:text-xl text-brand-light-gray max-w-3xl mx-auto">
+            Expert in Vedic Astrology, Vastu, Numerology, and Personalized Horoscopes.
+        </p>
+        <a href="#contact" class="mt-8 inline-block bg-brand-gold text-brand-deep-blue font-medium py-3 px-8 rounded-lg shadow-lg hover:bg-yellow-500 transition duration-300">
+            Book a Consultation
+        </a>
+    </div>
+</header>
+
+<!-- About Section -->
+<section id="about" class="py-20 md:py-28 bg-brand-deep-blue/80 backdrop-blur-sm">
+    <div class="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <!-- About Image -->
+            <div>
+                <!--
+                  EDIT: I've updated the path.
+                  Please add your photo as 'astro-neeraj-sharma.jpg'
+                  inside your 'assets/images/' folder.
+                -->
+                <img src="assets/images/astro-neeraj-sharma.jpg"
+                     alt="A professional headshot of Astrologer Neeraj Sharma"
+                     onerror="this.src='https://placehold.co/600x400/1e293b/b0c4de?text=Photo+of+Astrologer'"
+                     class="rounded-lg shadow-xl w-full h-auto object-cover aspect-video border-4 border-brand-gold/30">
+            </div>
+
+            <!-- About Text -->
+            <div class="md:pl-8">
+                <h2 class="text-3xl font-bold text-white">Astro Neeraj Sharma (Patan Wale Guruji)</h2>
+                <p class="mt-4 text-lg text-brand-light-gray">
+                    Welcome! I'm Neeraj Sharma, an astrologer based in Indore.
+                    With a passion for celestial wisdom and a commitment to genuine guidance, I've spent the last [X] years
+                    helping clients find clarity and navigate their life's journey.
+                </p>
+                <p class="mt-4 text-lg text-brand-light-gray">
+                    My practice is built on a foundation of ancient knowledge and intuitive understanding.
+                    I believe in empowering you with insights to make informed decisions.
+                </p>
             </div>
         </div>
-    </nav>
+    </div>
+</section>
 
-    <!-- Hero Section -->
-    <header class="bg-brand-deep-blue relative overflow-hidden">
-        <!-- Optional: subtle star-like background effect -->
-        <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#fff 1px, transparent 1px); background-size: 20px 20px;"></div>
-
-        <div class="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-24 md:py-32 text-center relative z-10">
-            <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight">
-                Guiding Your Path With the Stars
-            </h1>
-            <p class="mt-6 text-lg md:text-xl text-brand-light-gray max-w-3xl mx-auto">
-                Expert in Vedic Astrology, Vastu, Numerology, and Personalized Horoscopes.
+<!-- Services Section -->
+<section id="services" class="py-20 md:py-28 bg-brand-deep-blue">
+    <div class="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+            <h2 class="text-3xl font-bold text-white">My Services</h2>
+            <p class="mt-4 text-lg text-brand-light-gray max-w-2xl mx-auto">
+                Discover the insights the universe holds for you.
             </p>
-            <a href="#contact" class="mt-8 inline-block bg-brand-gold text-brand-deep-blue font-medium py-3 px-8 rounded-lg shadow-lg hover:bg-yellow-500 transition duration-300">
-                Book a Consultation
-            </a>
         </div>
-    </header>
 
-    <!-- About Section -->
-    <section id="about" class="py-20 md:py-28 bg-brand-deep-blue/80 backdrop-blur-sm">
-        <div class="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                <!-- About Image -->
-                <div>
-                    <!-- 
-                      EDIT: I've updated the path.
-                      Please add your photo as 'astro-neeraj-sharma.jpg'
-                      inside your 'assets/images/' folder.
-                    -->
-                    <img src="assets/images/astro-neeraj-sharma.jpg" 
-                         alt="A professional headshot of Astrologer Neeraj Sharma"
-                         onerror="this.src='https://placehold.co/600x400/1e293b/b0c4de?text=Photo+of+Astrologer'"
-                         class="rounded-lg shadow-xl w-full h-auto object-cover aspect-video border-4 border-brand-gold/30">
-                </div>
-                
-                <!-- About Text -->
-                <div class="md:pl-8">
-                    <h2 class="text-3xl font-bold text-white">Astro Neeraj Sharma (Patan Wale Guruji)</h2>
-                    <p class="mt-4 text-lg text-brand-light-gray">
-                        Welcome! I'm Neeraj Sharma, an astrologer based in Indore. 
-                        With a passion for celestial wisdom and a commitment to genuine guidance, I've spent the last [X] years 
-                        helping clients find clarity and navigate their life's journey.
-                    </p>
-                    <p class="mt-4 text-lg text-brand-light-gray">
-                        My practice is built on a foundation of ancient knowledge and intuitive understanding. 
-                        I believe in empowering you with insights to make informed decisions.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="py-20 md:py-28 bg-brand-deep-blue">
-        <div class="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-            <div class="text-center">
-                <h2 class="text-3xl font-bold text-white">My Services</h2>
-                <p class="mt-4 text-lg text-brand-light-gray max-w-2xl mx-auto">
-                    Discover the insights the universe holds for you.
+        <!-- Service Cards -->
+        <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Service Card 1 -->
+            <div class="bg-brand-deep-blue/50 backdrop-blur-sm p-8 rounded-lg shadow-lg border border-brand-gold/30 transition-all duration-300 hover:shadow-brand-gold/20 hover:shadow-2xl">
+                <h3 class="text-2xl font-bold text-brand-gold">
+                    Kundali Reading
+                </h3>
+                <p class="mt-4 text-brand-light-gray">
+                    An in-depth analysis of your birth chart to understand your life's purpose, challenges, and opportunities.
                 </p>
             </div>
-            
-            <!-- Service Cards -->
-            <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Service Card 1 -->
-                <div class="bg-brand-deep-blue/50 backdrop-blur-sm p-8 rounded-lg shadow-lg border border-brand-gold/30 transition-all duration-300 hover:shadow-brand-gold/20 hover:shadow-2xl">
-                    <h3 class="text-2xl font-bold text-brand-gold">
-                        Kundali Reading
-                    </h3>
-                    <p class="mt-4 text-brand-light-gray">
-                        An in-depth analysis of your birth chart to understand your life's purpose, challenges, and opportunities.
-                    </p>
-                </div>
-                
-                <!-- Service Card 2 -->
-                <div class="bg-brand-deep-blue/50 backdrop-blur-sm p-8 rounded-lg shadow-lg border border-brand-gold/30 transition-all duration-300 hover:shadow-brand-gold/20 hover:shadow-2xl">
-                    <h3 class="text-2xl font-bold text-brand-gold">
-                        Kundali Milan
-                    </h3>
-                    <p class="mt-4 text-brand-light-gray">
-                        Gain clarity on specific questions or life situations through the intuitive wisdom of the tarot.
-                    </p>
-                </div>
-                
-                <!-- Service Card 3 -->
-                <div class="bg-brand-deep-blue/50 backdrop-blur-sm p-8 rounded-lg shadow-lg border border-brand-gold/30 transition-all duration-300 hover:shadow-brand-gold/20 hover:shadow-2xl">
-                    <h3 class="text-2xl font-bold text-brand-gold">
-                        Numerology
-                    </h3>
-                    <p class="mt-4 text-brand-light-gray">
-                        Understand relationship compatibility for marriage or business partnerships through detailed chart comparison.
-                    </p>
-                </div>
 
-                <!-- NEW Service Card 4 -->
-                <div class="bg-brand-deep-blue/50 backdrop-blur-sm p-8 rounded-lg shadow-lg border border-brand-gold/30 transition-all duration-300 hover:shadow-brand-gold/20 hover:shadow-2xl">
-                    <h3 class="text-2xl font-bold text-brand-gold">
-                        Vastu Consultation
-                    </h3>
-                    <p class="mt-4 text-brand-light-gray">
-                        Align your home or office with cosmic energy to promote harmony, prosperity, and well-being for your family or business.
-                    </p>
-                </div>
-
-                <!-- NEW Service Card 5 -->
-                <div class="bg-brand-deep-blue/50 backdrop-blur-sm p-8 rounded-lg shadow-lg border border-brand-gold/30 transition-all duration-300 hover:shadow-brand-gold/20 hover:shadow-2xl">
-                    <h3 class="text-2xl font-bold text-brand-gold">
-                        Face Reading
-                    </h3>
-                    <p class="mt-4 text-brand-light-gray">
-                        Discover the hidden meanings in your name and birth date. Understand your personality, strengths, and life path through the science of numbers.
-                    </p>
-                </div>
-
-                <!-- NEW Service Card 6 -->
-                <div class="bg-brand-deep-blue/50 backdrop-blur-sm p-8 rounded-lg shadow-lg border border-brand-gold/30 transition-all duration-300 hover:shadow-brand-gold/20 hover:shadow-2xl">
-                    <h3 class="text-2xl font-bold text-brand-gold">
-                        Gemstone Recommendation
-                    </h3>
-                    <p class="mt-4 text-brand-light-gray">
-                        Based on your unique birth chart, find the specific gemstone that can help balance your energies, strengthen your planets, and attract positive outcomes.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- NEW Testimonials Section -->
-    <section id="testimonials" class="py-20 md:py-28 bg-brand-deep-blue/80 backdrop-blur-sm">
-        <div class="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-            <div class="text-center">
-                <h2 class="text-3xl font-bold text-white">What My Clients Say</h2>
-                <p class="mt-4 text-lg text-brand-light-gray max-w-2xl mx-auto">
-                    Feedback from people I've had the privilege to guide.
+            <!-- Service Card 2 -->
+            <div class="bg-brand-deep-blue/50 backdrop-blur-sm p-8 rounded-lg shadow-lg border border-brand-gold/30 transition-all duration-300 hover:shadow-brand-gold/20 hover:shadow-2xl">
+                <h3 class="text-2xl font-bold text-brand-gold">
+                    Kundali Milan
+                </h3>
+                <p class="mt-4 text-brand-light-gray">
+                    Gain clarity on specific questions or life situations through the intuitive wisdom of the tarot.
                 </p>
             </div>
-            
-            <!-- Testimonial Cards -->
-            <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
-                
-                <!-- Testimonial Card 1 -->
-                <div class="bg-brand-deep-blue/50 p-8 rounded-lg shadow-lg border border-brand-gold/30">
-                    <p class="text-lg text-brand-light-gray italic">
-                        <!-- EDIT: Add a real testimonial quote -->
-                        "Neeraj Guruji's reading was incredibly accurate. I felt a sense of clarity I hadn't felt in years. Highly recommend his guidance."
-                    </p>
-                    <p class="mt-4 text-xl font-bold text-brand-gold">
-                        <!-- EDIT: Add the client's name -->
-                        - A. K. Sharma
-                    </p>
-                </div>
-                
-                <!-- Testimonial Card 2 -->
-                <div class="bg-brand-deep-blue/50 p-8 rounded-lg shadow-lg border border-brand-gold/30">
-                    <p class="text-lg text-brand-light-gray italic">
-                        <!-- EDIT: Add a real testimonial quote -->
-                        "The Vastu consultation for my new office made a tangible difference. The energy feels much better. Thank you, Guruji."
-                    </p>
-                    <p class="mt-4 text-xl font-bold text-brand-gold">
-                        <!-- EDIT: Add the client's name -->
-                        - R. Patel
-                    </p>
-                </div>
+
+            <!-- Service Card 3 -->
+            <div class="bg-brand-deep-blue/50 backdrop-blur-sm p-8 rounded-lg shadow-lg border border-brand-gold/30 transition-all duration-300 hover:shadow-brand-gold/20 hover:shadow-2xl">
+                <h3 class="text-2xl font-bold text-brand-gold">
+                    Numerology
+                </h3>
+                <p class="mt-4 text-brand-light-gray">
+                    Understand relationship compatibility for marriage or business partnerships through detailed chart comparison.
+                </p>
+            </div>
+
+            <!-- NEW Service Card 4 -->
+            <div class="bg-brand-deep-blue/50 backdrop-blur-sm p-8 rounded-lg shadow-lg border border-brand-gold/30 transition-all duration-300 hover:shadow-brand-gold/20 hover:shadow-2xl">
+                <h3 class="text-2xl font-bold text-brand-gold">
+                    Vastu Consultation
+                </h3>
+                <p class="mt-4 text-brand-light-gray">
+                    Align your home or office with cosmic energy to promote harmony, prosperity, and well-being for your family or business.
+                </p>
+            </div>
+
+            <!-- NEW Service Card 5 -->
+            <div class="bg-brand-deep-blue/50 backdrop-blur-sm p-8 rounded-lg shadow-lg border border-brand-gold/30 transition-all duration-300 hover:shadow-brand-gold/20 hover:shadow-2xl">
+                <h3 class="text-2xl font-bold text-brand-gold">
+                    Face Reading
+                </h3>
+                <p class="mt-4 text-brand-light-gray">
+                    Discover the hidden meanings in your name and birth date. Understand your personality, strengths, and life path through the science of numbers.
+                </p>
+            </div>
+
+            <!-- NEW Service Card 6 -->
+            <div class="bg-brand-deep-blue/50 backdrop-blur-sm p-8 rounded-lg shadow-lg border border-brand-gold/30 transition-all duration-300 hover:shadow-brand-gold/20 hover:shadow-2xl">
+                <h3 class="text-2xl font-bold text-brand-gold">
+                    Gemstone Recommendation
+                </h3>
+                <p class="mt-4 text-brand-light-gray">
+                    Based on your unique birth chart, find the specific gemstone that can help balance your energies, strengthen your planets, and attract positive outcomes.
+                </p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Contact & Google Form Section (Renamed from Contact) -->
-    <section id="contact" class="py-20 md:py-28 bg-brand-gold text-brand-deep-blue">
-        <div class="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold">Book a Consultation</h2>
-            <p class="mt-4 text-lg md:text-xl text-gray-800">
-                Ready to find clarity? Reach out directly or fill out the form below to schedule your consultation.
+<!-- NEW Testimonials Section -->
+<section id="testimonials" class="py-20 md:py-28 bg-brand-deep-blue/80 backdrop-blur-sm">
+    <div class="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+            <h2 class="text-3xl font-bold text-white">What My Clients Say</h2>
+            <p class="mt-4 text-lg text-brand-light-gray max-w-2xl mx-auto">
+                Feedback from people I've had the privilege to guide.
+            </p>
+        </div>
+
+        <!-- Testimonial Cards -->
+        <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
+
+            <!-- Testimonial Card 1 -->
+            <div class="bg-brand-deep-blue/50 p-8 rounded-lg shadow-lg border border-brand-gold/30">
+                <p class="text-lg text-brand-light-gray italic">
+                    <!-- EDIT: Add a real testimonial quote -->
+                    "Neeraj Guruji's reading was incredibly accurate. I felt a sense of clarity I hadn't felt in years. Highly recommend his guidance."
+                </p>
+                <p class="mt-4 text-xl font-bold text-brand-gold">
+                    <!-- EDIT: Add the client's name -->
+                    - A. K. Sharma
+                </p>
+            </div>
+
+            <!-- Testimonial Card 2 -->
+            <div class="bg-brand-deep-blue/50 p-8 rounded-lg shadow-lg border border-brand-gold/30">
+                <p class="text-lg text-brand-light-gray italic">
+                    <!-- EDIT: Add a real testimonial quote -->
+                    "The Vastu consultation for my new office made a tangible difference. The energy feels much better. Thank you, Guruji."
+                </p>
+                <p class="mt-4 text-xl font-bold text-brand-gold">
+                    <!-- EDIT: Add the client's name -->
+                    - R. Patel
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact & Google Form Section (Renamed from Contact) -->
+<section id="contact" class="py-20 md:py-28 bg-brand-gold text-brand-deep-blue">
+    <div class="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold">Book a Consultation</h2>
+        <p class="mt-4 text-lg md:text-xl text-gray-800">
+            Ready to find clarity? Reach out directly or fill out the form below to schedule your consultation.
             </I>
 
-            <div class="mt-16">
-                <div class="mt-6">
-                    <p class="mt-2 text-xl font-medium">
-                        Phone: +91-7987909015, +91-9755513500
-                    </p>
-                    <p class="text-xl font-medium">
-                        Email: <a href="mailto:neeraj1375sharma@gmail.com" class="underline hover:text-gray-900">neeraj1375sharma@gmail.com</a>
+        <div class="mt-16">
+            <div class="mt-6">
+                <p class="mt-2 text-xl font-medium">
+                    Phone: +91-7987909015, +91-9755513500
+                </p>
+                <p class="text-xl font-medium">
+                    Email: <a href="mailto:neeraj1375sharma@gmail.com" class="underline hover:text-gray-900">neeraj1375sharma@gmail.com</a>
+                </p>
+            </div>
+        </div>
+        <!-- NEW: Google Form Embed -->
+        <!-- I've added 'max-w-2xl mx-auto' here to center the form and make it narrower -->
+        <div class="mt-12 bg-white rounded-lg shadow-xl overflow-hidden max-w-2xl mx-auto">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf559PnJLJ-YxSEprywyXHL9WyqKFu9dhOOYiBBR0FAJPJUiA/viewform?embedded=true"
+                    width="100%"
+                    height="800"
+                    frameborder="0"
+                    marginheight="0"
+                    marginwidth="0">
+                Loading…
+            </iframe>
+        </div>
+    </div>
+</section>
+
+
+<!-- FAQ Section (MOVED & UPDATED with Dropdowns) -->
+<section id="faq" class="py-20 md:py-28 bg-brand-deep-blue">
+    <div class="container mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+            <h2 class="text-3xl font-bold text-white">Frequently Asked Questions</h2>
+        </div>
+
+        <!-- Q&A List -->
+        <div class="mt-16 space-y-4">
+
+            <!-- Q1 -->
+            <details class="bg-brand-deep-blue/50 border border-brand-gold/30 rounded-lg overflow-hidden">
+                <summary class="faq-question cursor-pointer p-6 flex justify-between items-center">
+                    <h3 class="text-2xl font-bold text-brand-gold">
+                        <!-- EDIT: Question 1 -->
+                        What do I need for a reading?
+                    </h3>
+                    <span class="faq-icon text-brand-gold text-3xl font-bold">+</span>
+                </summary>
+                <div class="faq-answer p-6 pt-0">
+                    <p class="mt-2 text-lg text-brand-light-gray">
+                        <!-- EDIT: Answer 1 -->
+                        For a detailed Vedic reading, I will require your exact date of birth, time of birth, and place of birth. For other readings, we can discuss the requirements during our initial contact.
                     </p>
                 </div>
-            </div>
-            <!-- NEW: Google Form Embed -->
-            <!-- I've added 'max-w-2xl mx-auto' here to center the form and make it narrower -->
-            <div class="mt-12 bg-white rounded-lg shadow-xl overflow-hidden max-w-2xl mx-auto">
-                <iframe src="https://forms.gle/rPeU87RUGkDnCTEf9" 
-                        width="100%" 
-                        height="800" 
-                        frameborder="0" 
-                        marginheight="0" 
-                        marginwidth="0">
-                        Loading…
-                </iframe>
-            </div>
+            </details>
+
+            <!-- Q2 -->
+            <details class="bg-brand-deep-blue/50 border border-brand-gold/30 rounded-lg overflow-hidden">
+                <summary class="faq-question cursor-pointer p-6 flex justify-between items-center">
+                    <h3 class="text-2xl font-bold text-brand-gold">
+                        <!-- EDIT: Question 2 -->
+                        Are my readings confidential?
+                    </h3>
+                    <span class="faq-icon text-brand-gold text-3xl font-bold">+</span>
+                </summary>
+                <div class="faq-answer p-6 pt-0">
+                    <p class="mt-2 text-lg text-brand-light-gray">
+                        <!-- EDIT: Answer 2 -->
+                        Absolutely. All consultations and personal information are treated with the utmost privacy and confidentiality. Your trust is my priority.
+                    </p>
+                </div>
+            </details>
+
+            <!-- Q3 -->
+            <details class="bg-brand-deep-blue/50 border border-brand-gold/30 rounded-lg overflow-hidden">
+                <summary class="faq-question cursor-pointer p-6 flex justify-between items-center">
+                    <h3 class="text-2xl font-bold text-brand-gold">
+                        <!-- EDIT: Question 3 -->
+                        How do I book and pay for a consultation?
+                    </h3>
+                    <span class="faq-icon text-brand-gold text-3xl font-bold">+</span>
+                </summary>
+                <div class="faq-answer p-6 pt-0">
+                    <p class="mt-2 text-lg text-brand-light-gray">
+                        <!-- EDIT: Answer 3 -->
+                        You can book by calling or emailing me at the contact details below. Payment details and methods (like UPI or bank transfer) will be provided once we confirm the booking.
+                        </d>
+                </div>
+            </details>
+
         </div>
-    </section>
+    </div>
+</section>
 
 
-    <!-- FAQ Section (MOVED & UPDATED with Dropdowns) -->
-    <section id="faq" class="py-20 md:py-28 bg-brand-deep-blue">
-        <div class="container mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-            <div class="text-center">
-                <h2 class="text-3xl font-bold text-white">Frequently Asked Questions</h2>
-            </div>
-            
-            <!-- Q&A List -->
-            <div class="mt-16 space-y-4">
-                
-                <!-- Q1 -->
-                <details class="bg-brand-deep-blue/50 border border-brand-gold/30 rounded-lg overflow-hidden">
-                    <summary class="faq-question cursor-pointer p-6 flex justify-between items-center">
-                        <h3 class="text-2xl font-bold text-brand-gold">
-                            <!-- EDIT: Question 1 -->
-                            What do I need for a reading?
-                        </h3>
-                        <span class="faq-icon text-brand-gold text-3xl font-bold">+</span>
-                    </summary>
-                    <div class="faq-answer p-6 pt-0">
-                        <p class="mt-2 text-lg text-brand-light-gray">
-                            <!-- EDIT: Answer 1 -->
-                            For a detailed Vedic reading, I will require your exact date of birth, time of birth, and place of birth. For other readings, we can discuss the requirements during our initial contact.
-                        </p>
-                    </div>
-                </details>
-                
-                <!-- Q2 -->
-                <details class="bg-brand-deep-blue/50 border border-brand-gold/30 rounded-lg overflow-hidden">
-                    <summary class="faq-question cursor-pointer p-6 flex justify-between items-center">
-                        <h3 class="text-2xl font-bold text-brand-gold">
-                            <!-- EDIT: Question 2 -->
-                            Are my readings confidential?
-                        </h3>
-                        <span class="faq-icon text-brand-gold text-3xl font-bold">+</span>
-                    </summary>
-                    <div class="faq-answer p-6 pt-0">
-                        <p class="mt-2 text-lg text-brand-light-gray">
-                            <!-- EDIT: Answer 2 -->
-                            Absolutely. All consultations and personal information are treated with the utmost privacy and confidentiality. Your trust is my priority.
-                        </p>
-                    </div>
-                </details>
-                
-                <!-- Q3 -->
-                <details class="bg-brand-deep-blue/50 border border-brand-gold/30 rounded-lg overflow-hidden">
-                    <summary class="faq-question cursor-pointer p-6 flex justify-between items-center">
-                        <h3 class="text-2xl font-bold text-brand-gold">
-                            <!-- EDIT: Question 3 -->
-                            How do I book and pay for a consultation?
-                        </h3>
-                        <span class="faq-icon text-brand-gold text-3xl font-bold">+</span>
-                    </summary>
-                    <div class="faq-answer p-6 pt-0">
-                        <p class="mt-2 text-lg text-brand-light-gray">
-                            <!-- EDIT: Answer 3 -->
-                            You can book by calling or emailing me at the contact details below. Payment details and methods (like UPI or bank transfer) will be provided once we confirm the booking.
-                        </p>
-                    </div>
-                </details>
-                
-            </div>
-        </div>
-    </section>
+<!-- Footer -->
+<footer class="bg-gray-900 text-gray-400">
+    <div class="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8 text-center">
+        <p class="text-sm">
+            &copy; 2025 Astro Neeraj Sharma. All rights reserved.
+        </p>
+    </div>
+</footer>
 
+<!-- Script for Mobile Menu -->
+<script>
+    const menuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const iconClosed = document.getElementById('menu-icon-closed');
+    const iconOpen = document.getElementById('menu-icon-open');
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-400">
-        <div class="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8 text-center">
-            <p class="text-sm">
-                &copy; 2025 Astro Neeraj Sharma. All rights reserved.
-            </p>
-        </div>
-    </footer>
+    menuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        iconClosed.classList.toggle('hidden');
+        iconOpen.classList.toggle('hidden');
+    });
 
-    <!-- Script for Mobile Menu -->
-    <script>
-        const menuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const iconClosed = document.getElementById('menu-icon-closed');
-        const iconOpen = document.getElementById('menu-icon-open');
-
-        menuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-            iconClosed.classList.toggle('hidden');
-            iconOpen.classList.toggle('hidden');
+    // Close menu when a link is clicked
+    mobileMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            iconClosed.classList.remove('hidden');
+            iconOpen.classList.add('hidden');
         });
-
-        // Close menu when a link is clicked
-        mobileMenu.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
-                iconClosed.classList.remove('hidden');
-                iconOpen.classList.add('hidden');
-            });
-        });
-    </script>
+    });
+</script>
 </body>
 </html>
