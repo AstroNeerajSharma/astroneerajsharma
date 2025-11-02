@@ -10,8 +10,9 @@
     <!-- NEW META DESCRIPTION for SEO -->
     <meta name="description" content="Expert in Vedic Astrology, Vastu, Numerology, and Personalized Horoscopes. Guiding your path with the stars.">
 
-    <!-- NEW INLINE FAVICON (ॐ Symbol) -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22#d4af37%22>ॐ</text></svg>">
+    <!-- FIXED INLINE FAVICON (ॐ Symbol) -->
+    <!-- I replaced #d4af37 with %23d4af37 (URL encoding for '#') to make it work in more browsers -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22%23d4af37%22>ॐ</text></svg>">
 
     <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -239,7 +240,8 @@
             </div>
 
             <!-- Testimonial Cards -->
-            <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- FIXED: Changed to md:grid-cols-3 for a balanced 3-card layout -->
+            <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
 
                 <!-- Testimonial Card 1 -->
                 <div class="bg-brand-deep-blue/50 p-8 rounded-lg shadow-lg border border-brand-gold/30">
@@ -249,7 +251,7 @@
                     </p>
                     <p class="mt-4 text-xl font-bold text-brand-gold">
                         <!-- EDIT: Add the client's name -->
-                        - A. K. Sharma
+                        - Neeraj Bhargav (Businessmen)
                     </p>
                 </div>
 
@@ -261,7 +263,19 @@
                     </p>
                     <p class="mt-4 text-xl font-bold text-brand-gold">
                         <!-- EDIT: Add the client's name -->
-                        - R. Patel
+                        - Harsh Kataria (Property Broker)
+                    </p>
+                </div>
+
+                <!-- Testimonial Card 3 -->
+                <div class="bg-brand-deep-blue/50 p-8 rounded-lg shadow-lg border border-brand-gold/30">
+                    <p class="text-lg text-brand-light-gray italic">
+                        <!-- EDIT: Add a real testimonial quote -->
+                        "Best Astrologer, Understands problems very well and provides pocket friendly remidies."
+                    </p>
+                    <p class="mt-4 text-xl font-bold text-brand-gold">
+                        <!-- EDIT: Add the client's name -->
+                        - Kishor Kothari (Businessmen)
                     </p>
                 </div>
             </div>
@@ -358,7 +372,7 @@
                     <div class="faq-answer p-6 pt-0">
                         <p class="mt-2 text-lg text-brand-light-gray">
                             <!-- EDIT: Answer 3 -->
-                            You can book by calling or emailing me at the contact details below. Payment details and methods (like UPI or bank transfer) will be provided once we confirm the booking.
+                            You can book by calling or emailing me at the contact details below.
                         </p> <!-- FIXED: Changed </d> to </p> -->
                     </div>
                 </details>
