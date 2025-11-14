@@ -22,8 +22,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 
-    <!-- Link to your new external stylesheet -->
-    <link rel="stylesheet" href="css/style.css">
+    <!-- 
+      UPDATED: Re-linked the external stylesheet.
+    -->
+    <link rel="stylesheet" href="style.css">
 
     <script>
         // Configuration for Tailwind CSS
@@ -43,6 +45,10 @@
             },
         }
     </script>
+    
+    <!-- 
+      REMOVED: Embedded CSS block has been moved to style.css
+    -->
 </head>
 <body class="bg-brand-deep-blue text-brand-light-gray antialiased">
 
@@ -61,11 +67,37 @@
                 <!-- Desktop Navigation Links -->
                 <!-- REMOVED Phone Number From Here -->
                 <div class="hidden sm:flex sm:items-center sm:space-x-6">
-                    <a href="#about" class="text-brand-light-gray hover:text-brand-gold px-1 pt-1 text-sm font-medium">About</a>
-                    <a href="#services" class="text-brand-light-gray hover:text-brand-gold px-1 pt-1 text-sm font-medium">Services</a>
-                    <a href="#testimonials" class="text-brand-light-gray hover:text-brand-gold px-1 pt-1 text-sm font-medium">Testimonials</a>
-                    <a href="#contact" class="text-brand-light-gray hover:text-brand-gold px-1 pt-1 text-sm font-medium">Contact</a>
-                    <a href="#faq" class="text-brand-light-gray hover:text-brand-gold px-1 pt-1 text-sm font-medium">FAQ</a>
+                    <a href="#about" class="text-brand-light-gray hover:text-brand-gold px-1 pt-1 text-sm font-medium transition-colors">About</a>
+                    <a href="#services" class="text-brand-light-gray hover:text-brand-gold px-1 pt-1 text-sm font-medium transition-colors">Services</a>
+                    <a href="#testimonials" class="text-brand-light-gray hover:text-brand-gold px-1 pt-1 text-sm font-medium transition-colors">Testimonials</a>
+                    <a href="#faq" class="text-brand-light-gray hover:text-brand-gold px-1 pt-1 text-sm font-medium transition-colors">FAQ</a>
+                    
+                    <!-- NEW: Divider -->
+                    <div class="border-l border-brand-gold/30 h-6"></div>
+
+                    <!-- NEW: Social Icons in Nav -->
+                    <div class="flex items-center space-x-4 pl-2">
+                        <a href="https://www.facebook.com/astro.neerajsharma" class="text-brand-light-gray hover:text-brand-gold transition-all duration-300 transform hover:scale-110" aria-label="Facebook">
+                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/patan.wale.guruji" class="text-brand-light-gray hover:text-brand-gold transition-all duration-300 transform hover:scale-110" aria-label="Instagram">
+                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd" d="M12 2.163c3.204 0 3.584.012 4.85.07 1.172.053 1.905.24 2.491.454.64.24 1.08.51 1.567.997.486.486.757.927.997 1.567.213.586.4 1.319.454 2.491.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.053 1.172-.24 1.905-.454 2.491-.24.64-.51 1.08-.997 1.567-.486.486-.927.757-1.567.997-.586.213-1.319.4-2.491.454-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.172-.053-1.905-.24-2.491-.454-.64-.24-1.08-.51-1.567-.997-.486.486-.757.927-.997-1.567-.213.586-.4-1.319-.454-2.491-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.053-1.172.24 1.905.454 2.491.24-.64.51-1.08.997-1.567.486.486.927.757 1.567.997.586-.213 1.319-.4 2.491.454 1.266-.058 1.646.07 4.85-.07zM12 4.137c-3.11 0-3.48.012-4.695.068-1.07.048-1.65.23-2.02.383-.43.18-.73.39-1.06.72-.33.33-.54.63-.72 1.06-.15.37-.33.95-.38 2.02-.057 1.214-.07 1.584-.07 4.695s.012 3.48.07 4.695c.048 1.07.23 1.65.38 2.02.18.43.39.73.72 1.06.33.33.63.54 1.06.72.37.15.95.33 2.02.38 1.214.057 1.584.07 4.695.07s3.48-.012 4.695-.07c1.07-.048 1.65-.23 2.02-.38.43-.18.73-.39 1.06-.72.33.33.54.63.72-1.06.15-.37.33.95.38-2.02.057-1.214.07-1.584.07-4.695s-.012-3.48-.07-4.695c-.048-1.07-.23-1.65-.38-2.02-.18-.43-.39-.73-.72-1.06-.33-.33-.63-.54-1.06-.72-.37-.15-.95-.33-2.02-.38-1.214-.057-1.584-.07-4.695-.07zM12 9.25a2.75 2.75 0 100 5.5 2.75 2.75 0 000-5.5zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a.96.96 0 100 1.92.96.96 0 000-1.92z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                        <a href="https://www.youtube.com/@patan.wale.guruji" class="text-brand-light-gray hover:text-brand-gold transition-all duration-300 transform hover:scale-110" aria-label="YouTube">
+                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd" d="M19.812 5.418c.86.21 1.532.881 1.742 1.742C22 8.96 22 12 22 12s0 3.04-.446 4.84c-.21.86-.881 1.532-1.742 1.742C18.04 19 12 19 12 19s-6.04 0-7.84-.418c-.86-.21-1.532-.881-1.742-1.742C2 15.04 2 12 2 12s0-3.04.418-4.84c.21-.86.881-1.532 1.742-1.742C5.96 5 12 5 12 5s6.04 0 7.812.418zM9.94 14.582V9.418L14.82 12 9.94 14.582z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- UPDATED: Highlighted "Contact Us" button -->
+                    <a href="#contact" class="text-brand-deep-blue bg-brand-gold hover:bg-yellow-500 px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 shadow-md hover:shadow-lg">
+                        Contact Us
+                    </a>
                 </div>
 
                 <!-- Mobile Hamburger Button -->
@@ -102,7 +134,8 @@
             <a href="#about" class="text-brand-light-gray hover:bg-brand-gold/20 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
             <a href="#services" class="text-brand-light-gray hover:bg-brand-gold/20 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Services</a>
             <a href="#testimonials" class="text-brand-light-gray hover:bg-brand-gold/20 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Testimonials</a>
-            <a href="#contact" class="text-brand-light-gray hover:bg-brand-gold/20 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            <!-- UPDATED: Renamed to "Contact Us" -->
+            <a href="#contact" class="text-brand-light-gray hover:bg-brand-gold/20 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact Us</a>
             <a href="#faq" class="text-brand-light-gray hover:bg-brand-gold/20 hover:text-white block px-3 py-2 rounded-md text-base font-medium">FAQ</a>
             <a href="tel:+917987909015" class="text-brand-gold block px-3 py-2 rounded-md text-base font-medium">Call: +91-7987909015, +91-9755513500</a>
         </div>
@@ -112,21 +145,24 @@
             <div class="flex justify-center space-x-6">
                 <!-- Social Icon 1 (Facebook) -->
                 <!-- EDIT: Add your Facebook URL to the href="#" -->
-                <a href="https://www.facebook.com/astro.neerajsharma" class="text-brand-light-gray hover:text-brand-gold" aria-label="Facebook">
+                <!-- UPDATED: Added engaging hover effect -->
+                <a href="https://www.facebook.com/astro.neerajsharma" class="text-brand-light-gray hover:text-brand-gold transition-transform duration-300 transform hover:scale-110" aria-label="Facebook">
                     <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
                         <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
                     </svg>
                 </a>
                 <!-- Social Icon 2 (Instagram) -->
                 <!-- EDIT: Add your Instagram URL to the href="#" -->
-                <a href="https://www.instagram.com/patan.wale.guruji" class="text-brand-light-gray hover:text-brand-gold" aria-label="Instagram">
+                <!-- UPDATED: Added engaging hover effect -->
+                <a href="https://www.instagram.com/patan.wale.guruji" class="text-brand-light-gray hover:text-brand-gold transition-transform duration-300 transform hover:scale-110" aria-label="Instagram">
                     <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
                         <path fill-rule="evenodd" d="M12 2.163c3.204 0 3.584.012 4.85.07 1.172.053 1.905.24 2.491.454.64.24 1.08.51 1.567.997.486.486.757.927.997 1.567.213.586.4 1.319.454 2.491.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.053 1.172-.24 1.905-.454 2.491-.24.64-.51 1.08-.997 1.567-.486.486-.927.757-1.567.997-.586.213-1.319.4-2.491.454-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.172-.053-1.905-.24-2.491-.454-.64-.24-1.08-.51-1.567-.997-.486.486-.757.927-.997-1.567-.213.586-.4-1.319-.454-2.491-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.053-1.172.24 1.905.454 2.491.24-.64.51-1.08.997-1.567.486.486.927.757 1.567.997.586-.213 1.319-.4 2.491.454 1.266-.058 1.646.07 4.85-.07zM12 4.137c-3.11 0-3.48.012-4.695.068-1.07.048-1.65.23-2.02.383-.43.18-.73.39-1.06.72-.33.33-.54.63-.72 1.06-.15.37-.33.95-.38 2.02-.057 1.214-.07 1.584-.07 4.695s.012 3.48.07 4.695c.048 1.07.23 1.65.38 2.02.18.43.39.73.72 1.06.33.33.63.54 1.06.72.37.15.95.33 2.02.38 1.214.057 1.584.07 4.695.07s3.48-.012 4.695-.07c1.07-.048 1.65-.23 2.02-.38.43-.18.73-.39 1.06-.72.33.33.54.63.72-1.06.15-.37.33.95.38-2.02.057-1.214.07-1.584.07-4.695s-.012-3.48-.07-4.695c-.048-1.07-.23-1.65-.38-2.02-.18-.43-.39-.73-.72-1.06-.33-.33-.63-.54-1.06-.72-.37-.15-.95-.33-2.02-.38-1.214-.057-1.584-.07-4.695-.07zM12 9.25a2.75 2.75 0 100 5.5 2.75 2.75 0 000-5.5zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a.96.96 0 100 1.92.96.96 0 000-1.92z" clip-rule="evenodd" />
                     </svg>
                 </a>
                 <!-- Social Icon 3 (YouTube) -->
                 <!-- EDIT: Add your YouTube URL to the href="#" -->
-                <a href="https://www.youtube.com/@patan.wale.guruji" class="text-brand-light-gray hover:text-brand-gold" aria-label="YouTube">
+                <!-- UPDATED: Added engaging hover effect -->
+                <a href="https://www.youtube.com/@patan.wale.guruji" class="text-brand-light-gray hover:text-brand-gold transition-transform duration-300 transform hover:scale-110" aria-label="YouTube">
                     <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
                         <path fill-rule="evenodd" d="M19.812 5.418c.86.21 1.532.881 1.742 1.742C22 8.96 22 12 22 12s0 3.04-.446 4.84c-.21.86-.881 1.532-1.742 1.742C18.04 19 12 19 12 19s-6.04 0-7.84-.418c-.86-.21-1.532-.881-1.742-1.742C2 15.04 2 12 2 12s0-3.04.418-4.84c.21-.86.881-1.532 1.742-1.742C5.96 5 12 5 12 5s6.04 0 7.812.418zM9.94 14.582V9.418L14.82 12 9.94 14.582z" clip-rule="evenodd" />
                     </svg>
@@ -152,9 +188,16 @@
             <p class="mt-6 text-lg md:text-xl text-brand-light-gray max-w-3xl mx-auto">
                 Expert in Vedic Astrology, Vastu, Numerology, and Personalized Horoscopes.
             </p>
-            <a href="#contact" class="mt-8 inline-block bg-brand-gold text-brand-deep-blue font-medium py-3 px-8 rounded-lg shadow-lg hover:bg-yellow-500 transition duration-300">
-                Book a Consultation
-            </a>
+            <!-- UPDATED: Button Group -->
+            <div class="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="#contact" class="inline-block bg-brand-gold text-brand-deep-blue font-medium py-3 px-8 rounded-lg shadow-lg hover:bg-yellow-500 transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
+                    Book a Consultation
+                </a>
+                <!-- NEW: Secondary Button -->
+                <a href="#services" class="inline-block bg-transparent border-2 border-brand-gold text-brand-gold font-medium py-3 px-8 rounded-lg shadow-lg hover:bg-brand-gold hover:text-brand-deep-blue transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
+                    View Services
+                </a>
+            </div>
         </div>
     </header>
 
@@ -165,10 +208,13 @@
                 <!-- About Image -->
                 <div class="flex justify-center">
                     <div class="relative w-80 h-80 rounded-lg overflow-hidden shadow-xl border-4 border-brand-gold/30">
-                        <!-- Standardized to lowercase .jpg for best practice -->
-                        <img src="assets/images/astro-neeraj-sharma.jpg"
+                        <!-- 
+                          UPDATED: Replaced local asset with a themed placeholder.
+                          Your original onerror fallback is still here, which is great practice!
+                        -->
+                        <img src="https://placehold.co/400x400/0a192f/d4af37?text=Astro+Neeraj+Sharma"
                              alt="A professional headshot of Astrologer Neeraj Sharma"
-                             onerror="this.src='https://placehold.co/600x400/1e293b/b0c4de?text=Photo+of+Astrologer'"
+                             onerror="this.src='https://placehold.co/400x400/0a192f/b0c4de?text=Astro+Neeraj+Sharma'"
                              class="w-full h-full object-cover">
                     </div>
                 </div>
@@ -203,7 +249,8 @@
             <!-- Service Cards -->
             <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Service Card 1 -->
-                <div class="bg-brand-deep-blue/50 backdrop-blur-sm p-8 rounded-lg shadow-lg border border-brand-gold/30 transition-all duration-300 hover:shadow-brand-gold/20 hover:shadow-2xl">
+                <!-- UPDATED: Added hover:-translate-y-1 for a "lift" effect -->
+                <div class="bg-brand-deep-blue/50 backdrop-blur-sm p-8 rounded-lg shadow-lg border border-brand-gold/30 transition-all duration-300 hover:shadow-brand-gold/20 hover:shadow-2xl hover:-translate-y-1">
                     <h3 class="text-2xl font-bold text-brand-gold">
                         Kundali Reading
                     </h3>
@@ -213,7 +260,8 @@
                 </div>
 
                 <!-- Service Card 2 -->
-                <div class="bg-brand-deep-blue/50 backdrop-blur-sm p-8 rounded-lg shadow-lg border border-brand-gold/30 transition-all duration-300 hover:shadow-brand-gold/20 hover:shadow-2xl">
+                <!-- UPDATED: Added hover:-translate-y-1 -->
+                <div class="bg-brand-deep-blue/50 backdrop-blur-sm p-8 rounded-lg shadow-lg border border-brand-gold/30 transition-all duration-300 hover:shadow-brand-gold/20 hover:shadow-2xl hover:-translate-y-1">
                     <h3 class="text-2xl font-bold text-brand-gold">
                         Kundali Milan
                     </h3>
@@ -224,7 +272,8 @@
                 </div>
 
                 <!-- Service Card 3 -->
-                <div class="bg-brand-deep-blue/50 backdrop-blur-sm p-8 rounded-lg shadow-lg border border-brand-gold/30 transition-all duration-300 hover:shadow-brand-gold/20 hover:shadow-2xl">
+                <!-- UPDATED: Added hover:-translate-y-1 -->
+                <div class="bg-brand-deep-blue/50 backdrop-blur-sm p-8 rounded-lg shadow-lg border border-brand-gold/30 transition-all duration-300 hover:shadow-brand-gold/20 hover:shadow-2xl hover:-translate-y-1">
                     <h3 class="text-2xl font-bold text-brand-gold">
                         Numerology
                     </h3>
@@ -235,17 +284,20 @@
                 </div>
 
                 <!-- NEW Service Card 4 -->
-                <div class="bg-brand-deep-blue/50 backdrop-blur-sm p-8 rounded-lg shadow-lg border border-brand-gold/30 transition-all duration-300 hover:shadow-brand-gold/20 hover:shadow-2xl">
+                <!-- UPDATED: Added hover:-translate-y-1 -->
+                <div class="bg-brand-deep-blue/50 backdrop-blur-sm p-8 rounded-lg shadow-lg border border-brand-gold/30 transition-all duration-300 hover:shadow-brand-gold/20 hover:shadow-2xl hover:-translate-y-1">
                     <h3 class="text-2xl font-bold text-brand-gold">
                         Vastu Consultation
                     </h3>
+                    <!-- FIXED: Corrected closing </s_> tag to </p> -->
                     <p class="mt-4 text-brand-light-gray">
                         Align your home or office with cosmic energy to promote harmony, prosperity, and well-being for your family or business.
-                    </s_>
+                    </p>
                 </div>
 
                 <!-- NEW Service Card 5 -->
-                <div class="bg-brand-deep-blue/50 backdrop-blur-sm p-8 rounded-lg shadow-lg border border-brand-gold/30 transition-all duration-300 hover:shadow-brand-gold/20 hover:shadow-2xl">
+                <!-- UPDATED: Added hover:-translate-y-1 -->
+                <div class="bg-brand-deep-blue/50 backdrop-blur-sm p-8 rounded-lg shadow-lg border border-brand-gold/30 transition-all duration-300 hover:shadow-brand-gold/20 hover:shadow-2xl hover:-translate-y-1">
                     <h3 class="text-2xl font-bold text-brand-gold">
                         Face Reading
                     </h3>
@@ -256,7 +308,8 @@
                 </div>
 
                 <!-- NEW Service Card 6 -->
-                <div class="bg-brand-deep-blue/50 backdrop-blur-sm p-8 rounded-lg shadow-lg border border-brand-gold/30 transition-all duration-300 hover:shadow-brand-gold/20 hover:shadow-2xl">
+                <!-- UPDATED: Added hover:-translate-y-1 -->
+                <div class="bg-brand-deep-blue/50 backdrop-blur-sm p-8 rounded-lg shadow-lg border border-brand-gold/30 transition-all duration-300 hover:shadow-brand-gold/20 hover:shadow-2xl hover:-translate-y-1">
                     <h3 class="text-2xl font-bold text-brand-gold">
                         Palmistry
                     </h3>
@@ -326,14 +379,16 @@
     <section id="contact" class="py-20 md:py-28 bg-brand-gold text-brand-deep-blue">
         <div class="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
             <h2 class="text-3xl md:text-4xl font-bold">Book a Consultation</h2>
+            <!-- FIXED: Changed </I> to </p> -->
             <p class="mt-4 text-lg md:text-xl text-gray-800">
                 Ready to find clarity? Reach out directly or fill out the form below to schedule your consultation.
-            </p> <!-- FIXED: Changed </I> to </p> -->
+            </p>
 
             <div class="mt-16">
                 <div class="mt-6">
                     <p class="mt-2 text-xl font-medium">
-                        Phone: +91-7987909015, +91-9755513500
+                        <!-- UPDATED: Made phone numbers clickable links -->
+                        Phone: <a href="tel:+917987909015" class="hover:underline">+91-7987909015</a>, <a href="tel:+919755513500" class="hover:underline">+91-9755513500</a>
                     </p>
                     <p class="text-xl font-medium">
                         Email: <a href="mailto:gurujipatanwale@gmail.com" class="underline hover:text-gray-900">gurujipatanwale@gmail.com</a>
@@ -369,7 +424,8 @@
                 <!-- Q1 -->
                 <details class="bg-brand-deep-blue/50 border border-brand-gold/30 rounded-lg overflow-hidden">
                     <summary class="faq-question cursor-pointer p-6 flex justify-between items-center">
-                        <h3 classs="text-xl md:text-2xl font-bold text-brand-gold">
+                        <!-- FIXED: Corrected 'classs' to 'class' -->
+                        <h3 class="text-xl md:text-2xl font-bold text-brand-gold">
                             <!-- EDIT: Question 1 -->
                             What do I need for a reading?
                         </h3>
@@ -410,10 +466,11 @@
                         <span class="faq-icon text-brand-gold text-3xl font-bold">+</span>
                     </summary>
                     <div class="faq-answer p-6 pt-0">
+                        <!-- FIXED: Changed </d> to </p> -->
                         <p class="mt-2 text-lg text-brand-light-gray">
                             <!-- EDIT: Answer 3 -->
                             You can book by calling or emailing me at the contact details below.
-                        </p> <!-- FIXED: Changed </d> to </p> -->
+                        </p>
                     </div>
                 </details>
 
@@ -443,7 +500,8 @@
                         <li><a href="#about" class="hover:text-brand-gold">About</a></li>
                         <li><a href="#services" class="hover:text-brand-gold">Services</a></li>
                         <li><a href="#testimonials" class="hover:text-brand-gold">Testimonials</a></li>
-                        <li><a href="#contact" class="hover:text-brand-gold">Book Now</a></li>
+                        <!-- UPDATED: Link text -->
+                        <li><a href="#contact" class="hover:text-brand-gold">Book Now / Contact Us</a></li>
                         <li><a href="#faq" class="hover:text-brand-gold">FAQ</a></li>
                     </ul>
                 </div>
@@ -484,21 +542,24 @@
                 <div class="flex space-x-6">
                     <!-- Social Icon 1 (Facebook) -->
                     <!-- EDIT: Add your Facebook URL to the href="#" -->
-                    <a href="https://www.facebook.com/astro.neerajsharma" class="text-brand-light-gray hover:text-brand-gold" aria-label="Facebook">
+                    <!-- UPDATED: Added engaging hover effect -->
+                    <a href="https://www.facebook.com/astro.neerajsharma" class="text-brand-light-gray hover:text-brand-gold transition-transform duration-300 transform hover:scale-110" aria-label="Facebook">
                         <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
                             <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
                         </svg>
                     </a>
                     <!-- Social Icon 2 (Instagram) -->
                     <!-- EDIT: Add your Instagram URL to the href="#" -->
-                    <a href="https://www.instagram.com/patan.wale.guruji" class="text-brand-light-gray hover:text-brand-gold" aria-label="Instagram">
+                    <!-- UPDATED: Added engaging hover effect -->
+                    <a href="https://www.instagram.com/patan.wale.guruji" class="text-brand-light-gray hover:text-brand-gold transition-transform duration-300 transform hover:scale-110" aria-label="Instagram">
                         <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
                             <path fill-rule="evenodd" d="M12 2.163c3.204 0 3.584.012 4.85.07 1.172.053 1.905.24 2.491.454.64.24 1.08.51 1.567.997.486.486.757.927.997 1.567.213.586.4 1.319.454 2.491.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.053 1.172-.24 1.905-.454 2.491-.24.64-.51 1.08-.997 1.567-.486.486-.927.757-1.567.997-.586.213-1.319.4-2.491.454-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.172-.053-1.905-.24-2.491-.454-.64-.24-1.08-.51-1.567-.997-.486.486-.757.927-.997-1.567-.213.586-.4-1.319-.454-2.491-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.053-1.172.24 1.905.454 2.491.24-.64.51-1.08.997-1.567.486.486.927.757 1.567.997.586-.213 1.319-.4 2.491.454 1.266-.058 1.646.07 4.85-.07zM12 4.137c-3.11 0-3.48.012-4.695.068-1.07.048-1.65.23-2.02.383-.43.18-.73.39-1.06.72-.33.33-.54.63-.72 1.06-.15.37-.33.95-.38 2.02-.057 1.214-.07 1.584-.07 4.695s.012 3.48.07 4.695c.048 1.07.23 1.65.38 2.02.18.43.39.73.72 1.06.33.33.63.54 1.06.72.37.15.95.33 2.02.38 1.214.057 1.584.07 4.695.07s3.48-.012 4.695-.07c1.07-.048 1.65-.23 2.02-.38.43-.18.73-.39 1.06-.72.33.33.54.63.72-1.06.15-.37.33.95.38-2.02.057-1.214.07-1.584.07-4.695s-.012-3.48-.07-4.695c-.048-1.07-.23-1.65-.38-2.02-.18-.43-.39-.73-.72-1.06-.33-.33-.63-.54-1.06-.72-.37-.15-.95-.33-2.02-.38-1.214-.057-1.584-.07-4.695-.07zM12 9.25a2.75 2.75 0 100 5.5 2.75 2.75 0 000-5.5zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a.96.96 0 100 1.92.96.96 0 000-1.92z" clip-rule="evenodd" />
                     </svg>
                 </a>
                 <!-- Social Icon 3 (YouTube) -->
                 <!-- EDIT: Add your YouTube URL to the href="#" -->
-                <a href="https://www.youtube.com/@patan.wale.guruji" class="text-brand-light-gray hover:text-brand-gold" aria-label="YouTube">
+                <!-- UPDATED: Added engaging hover effect -->
+                <a href="https://www.youtube.com/@patan.wale.guruji" class="text-brand-light-gray hover:text-brand-gold transition-transform duration-300 transform hover:scale-110" aria-label="YouTube">
                     <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
                         <path fill-rule="evenodd" d="M19.812 5.418c.86.21 1.532.881 1.742 1.742C22 8.96 22 12 22 12s0 3.04-.446 4.84c-.21.86-.881 1.532-1.742 1.742C18.04 19 12 19 12 19s-6.04 0-7.84-.418c-.86-.21-1.532-.881-1.742-1.742C2 15.04 2 12 2 12s0-3.04.418-4.84c.21-.86.881-1.532 1.742-1.742C5.96 5 12 5 12 5s6.04 0 7.812.418zM9.94 14.582V9.418L14.82 12 9.94 14.582z" clip-rule="evenodd" />
                     </svg>
@@ -510,6 +571,23 @@
         </div>
         </div>
     </footer>
+
+    <!-- 
+      NEW FEATURE: Floating Action Button (WhatsApp)
+      - This button is fixed to the bottom-right
+      - It's hidden on screens 'sm' (640px) and larger
+      - It links directly to a WhatsApp chat
+    -->
+    <a href="https://wa.me/917987909015" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       aria-label="Chat on WhatsApp"
+       class="sm:hidden fixed bottom-6 right-6 z-50 bg-green-500 text-white p-4 rounded-full shadow-lg transition-transform hover:scale-110">
+        <!-- WhatsApp SVG Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-7 h-7">
+            <path d="M12.01,2C6.486,2,2,6.486,2,12.01c0,1.706,0.44,3.323,1.241,4.734L2,22l5.341-1.22c1.366,0.728,2.89,1.13,4.467,1.13 c5.524,0,10.01-4.486,10.01-10.01C22.01,6.486,17.534,2,12.01,2z M12.01,20.13c-1.444,0-2.822-0.384-4.018-1.074l-0.288-0.171 l-3.003,0.689l0.703-2.926l-0.186-0.3c-0.74-1.223-1.144-2.644-1.144-4.137c0-4.48,3.649-8.129,8.129-8.129 c2.203,0,4.24,0.86,5.748,2.368c1.508,1.508,2.368,3.545,2.368,5.748C20.139,16.481,16.49,20.13,12.01,20.13z M17.076,14.62 c-0.144-0.072-0.849-0.42-0.981-0.468c-0.132-0.048-0.228-0.072-0.325,0.072c-0.096,0.144-0.373,0.468-0.457,0.564 c-0.084,0.096-0.168,0.108-0.313,0.036c-0.144-0.072-0.609-0.225-1.16-0.723c-0.432-0.38-0.723-0.85-0.808-0.996 c-0.084-0.144-0.009-0.219,0.063-0.288c0.063-0.063,0.144-0.168,0.217-0.252c0.072-0.084,0.096-0.144,0.144-0.24 c0.048-0.096,0.024-0.18-0.012-0.252c-0.036-0.072-0.325-0.78-0.445-1.068c-0.121-0.288-0.241-0.249-0.325-0.255 c-0.084-0.006-0.18,0-0.276,0c-0.096,0-0.252,0.036-0.384,0.18c-0.132,0.144-0.506,0.492-0.506,1.2c0,0.708,0.518,1.392,0.589,1.488 c0.072,0.096,1.024,1.644,2.488,2.2c0.344,0.133,0.615,0.211,0.824,0.27c0.21,0.059,0.399,0.048,0.551-0.024 c0.168-0.084,0.71-0.408,0.808-0.804c0.096-0.396,0.096-0.732,0.072-0.804C17.22,14.692,17.157,14.668,17.076,14.62z"/>
+        </svg>
+    </a>
 
     <!-- UPDATED Script for Mobile Menu (Side Drawer) -->
     <script>
@@ -556,4 +634,3 @@
     </script>
 </body>
 </html>
-
