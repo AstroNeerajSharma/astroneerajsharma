@@ -74,9 +74,11 @@
                         serif: ['Playfair Display', 'serif'],
                     },
                     colors: {
-                        'brand-deep-blue': '#0a192f', // Deep celestial navy
-                        'brand-gold': '#d4af37',      // Classic gold accent
-                        'brand-light-gray': '#b0c4de', // Soft starry light gray
+                        'brand-deep-blue': '#1e3a8a', // Rich Royal Blue (lighter than before)
+                        'brand-gold': '#b45309',      // Darker Gold/Bronze for readability on light backgrounds
+                        'brand-accent': '#f59e0b',    // Bright Gold/Orange for buttons
+                        'brand-cream': '#fff7ed',     // Warm background color
+                        'brand-dark': '#0f172a',      // Dark text color
                     },
                     animation: {
                         'fade-in-up': 'fadeInUp 1s ease-out forwards',
@@ -92,18 +94,18 @@
         }
     </script>
 </head>
-<body class="bg-brand-deep-blue text-brand-light-gray antialiased selection:bg-brand-gold selection:text-brand-deep-blue">
+<body class="bg-white text-gray-800 antialiased">
 
-    <!-- Navigation -->
-    <nav class="bg-brand-deep-blue/80 backdrop-blur-md shadow-lg sticky top-0 z-50 border-b border-brand-gold/20">
+    <!-- Navigation (White Background) -->
+    <nav class="bg-white shadow-md sticky top-0 z-50 border-b border-orange-100">
         <div class="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <!-- Logo/Name -->
                 <div class="flex-shrink-0 flex items-center gap-3">
-                    <div class="w-10 h-10 rounded-full border-2 border-brand-gold flex items-center justify-center text-brand-gold font-serif font-bold text-xl">
+                    <div class="w-10 h-10 rounded-full border-2 border-brand-accent flex items-center justify-center text-brand-accent font-serif font-bold text-xl bg-orange-50">
                         ॐ
                     </div>
-                    <a href="#" class="text-lg sm:text-xl md:text-2xl font-bold text-white font-serif tracking-wide">
+                    <a href="#" class="text-lg sm:text-xl md:text-2xl font-bold text-brand-deep-blue font-serif tracking-wide">
                         <span data-i18n="brand-subtitle">Patan Wale Guruji</span>
                         <span class="block text-xs text-brand-gold font-sans font-normal" data-i18n="brand-name">Astro Neeraj Sharma</span>
                     </a>
@@ -111,45 +113,42 @@
 
                 <!-- Desktop Links -->
                 <div class="hidden lg:flex lg:items-center lg:space-x-6">
-                    <a href="#about" class="text-brand-light-gray hover:text-brand-gold text-sm font-medium transition-colors" data-i18n="nav-about">About</a>
-                    <a href="#services" class="text-brand-light-gray hover:text-brand-gold text-sm font-medium transition-colors" data-i18n="nav-services">Services</a>
+                    <a href="#about" class="text-gray-600 hover:text-brand-deep-blue text-sm font-medium transition-colors" data-i18n="nav-about">About</a>
+                    <a href="#services" class="text-gray-600 hover:text-brand-deep-blue text-sm font-medium transition-colors" data-i18n="nav-services">Services</a>
+                    <a href="#products" class="text-gray-600 hover:text-brand-deep-blue text-sm font-medium transition-colors" data-i18n="nav-products">Products</a>
+                    <a href="#album" class="text-gray-600 hover:text-brand-deep-blue text-sm font-medium transition-colors" data-i18n="nav-album">Gallery</a>
+                    <a href="#testimonials" class="text-gray-600 hover:text-brand-deep-blue text-sm font-medium transition-colors" data-i18n="nav-testimonials">Testimonials</a>
+                    <a href="#faq" class="text-gray-600 hover:text-brand-deep-blue text-sm font-medium transition-colors" data-i18n="nav-faq">FAQ</a>
                     
-                    <!-- New Links -->
-                    <a href="#products" class="text-brand-light-gray hover:text-brand-gold text-sm font-medium transition-colors" data-i18n="nav-products">Products</a>
-                    <a href="#album" class="text-brand-light-gray hover:text-brand-gold text-sm font-medium transition-colors" data-i18n="nav-album">Gallery</a>
-                    
-                    <a href="#testimonials" class="text-brand-light-gray hover:text-brand-gold text-sm font-medium transition-colors" data-i18n="nav-testimonials">Testimonials</a>
-                    <a href="#faq" class="text-brand-light-gray hover:text-brand-gold text-sm font-medium transition-colors" data-i18n="nav-faq">FAQ</a>
-                    
-                    <div class="border-l border-brand-gold/30 h-6 mx-2"></div>
+                    <div class="border-l border-gray-300 h-6 mx-2"></div>
 
                     <!-- Language Switcher -->
-                    <button id="lang-toggle-desktop" class="text-brand-gold border border-brand-gold/50 px-2 py-1 rounded hover:bg-brand-gold/10 transition-colors text-xs font-bold">
+                    <button id="lang-toggle-desktop" class="text-brand-deep-blue border border-brand-deep-blue/30 px-2 py-1 rounded hover:bg-brand-deep-blue/5 transition-colors text-xs font-bold">
                         EN / हिंदी
                     </button>
 
                     <!-- Social Icons -->
                     <div class="flex items-center space-x-3">
-                        <a href="https://www.facebook.com/astro.neerajsharma" target="_blank" class="text-brand-light-gray hover:text-brand-gold transition-all duration-300 transform hover:scale-110">
+                        <a href="https://www.facebook.com/astro.neerajsharma" target="_blank" class="text-gray-500 hover:text-[#1877F2] transition-all duration-300 transform hover:scale-110">
                             <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
                         </a>
-                        <a href="https://www.instagram.com/patan.wale.guruji" target="_blank" class="text-brand-light-gray hover:text-brand-gold transition-all duration-300 transform hover:scale-110">
+                        <a href="https://www.instagram.com/patan.wale.guruji" target="_blank" class="text-gray-500 hover:text-[#E4405F] transition-all duration-300 transform hover:scale-110">
                             <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" /></svg>
                         </a>
-                        <a href="https://www.youtube.com/@patan.wale.guruji" target="_blank" class="text-brand-light-gray hover:text-brand-gold transition-all duration-300 transform hover:scale-110">
+                        <a href="https://www.youtube.com/@patan.wale.guruji" target="_blank" class="text-gray-500 hover:text-[#FF0000] transition-all duration-300 transform hover:scale-110">
                             <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M19.812 5.418c.86.21 1.532.881 1.742 1.742C22 8.96 22 12 22 12s0 3.04-.446 4.84c-.21.86-.881 1.532-1.742 1.742C18.04 19 12 19 12 19s-6.04 0-7.84-.418c-.86-.21-1.532-.881-1.742-1.742C2 15.04 2 12 2 12s0-3.04.418-4.84c.21-.86.881-1.532 1.742-1.742C5.96 5 12 5 12 5s6.04 0 7.812.418zM9.94 14.582V9.418L14.82 12 9.94 14.582z" clip-rule="evenodd" /></svg>
                         </a>
                     </div>
                     
                     <!-- Button -->
-                    <a href="#contact" class="text-brand-deep-blue bg-brand-gold hover:bg-yellow-500 px-4 py-2 rounded-md text-xs font-bold transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105" data-i18n="nav-book">
+                    <a href="#contact" class="text-white bg-brand-deep-blue hover:bg-blue-900 px-4 py-2 rounded-md text-xs font-bold transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105" data-i18n="nav-book">
                         Book Now
                     </a>
                 </div>
 
                 <!-- Mobile Menu Button -->
                 <div class="flex items-center lg:hidden">
-                    <button id="mobile-menu-button" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-brand-light-gray hover:text-white hover:bg-brand-gold/20 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-brand-gold" aria-controls="mobile-menu" aria-expanded="false">
+                    <button id="mobile-menu-button" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-500 hover:text-brand-deep-blue hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-brand-deep-blue">
                         <span class="sr-only">Open main menu</span>
                         <svg id="menu-icon-closed" class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -163,95 +162,85 @@
         </div>
     </nav>
 
-    <!-- Mobile Menu Sidebar -->
-    <div id="mobile-menu" class="fixed top-0 left-0 h-full w-72 bg-brand-deep-blue shadow-2xl z-50 transform -translate-x-full border-r border-brand-gold/20 lg:hidden">
-        <div class="px-5 pt-6 pb-4 border-b border-brand-light-gray/10">
-            <span class="text-xl font-bold text-white font-serif" data-i18n="brand-subtitle">Patan Wale Guruji</span>
+    <!-- Mobile Menu Sidebar (Light) -->
+    <div id="mobile-menu" class="fixed top-0 left-0 h-full w-72 bg-white shadow-2xl z-50 transform -translate-x-full border-r border-gray-200 lg:hidden">
+        <div class="px-5 pt-6 pb-4 border-b border-gray-100">
+            <span class="text-xl font-bold text-brand-deep-blue font-serif" data-i18n="brand-subtitle">Patan Wale Guruji</span>
             <p class="text-sm text-brand-gold mt-1" data-i18n="brand-name">Astro Neeraj Sharma</p>
         </div>
         
         <div class="px-3 py-4 space-y-2">
-            <a href="#about" class="text-brand-light-gray hover:bg-brand-gold/10 hover:text-brand-gold block px-3 py-3 rounded-md text-base font-medium transition-colors" data-i18n="nav-about">About</a>
-            <a href="#services" class="text-brand-light-gray hover:bg-brand-gold/10 hover:text-brand-gold block px-3 py-3 rounded-md text-base font-medium transition-colors" data-i18n="nav-services">Services</a>
-            
-            <!-- New Links in Mobile -->
-            <a href="#products" class="text-brand-light-gray hover:bg-brand-gold/10 hover:text-brand-gold block px-3 py-3 rounded-md text-base font-medium transition-colors" data-i18n="nav-products">Products</a>
-            <a href="#album" class="text-brand-light-gray hover:bg-brand-gold/10 hover:text-brand-gold block px-3 py-3 rounded-md text-base font-medium transition-colors" data-i18n="nav-album">Gallery</a>
-            
-            <a href="#testimonials" class="text-brand-light-gray hover:bg-brand-gold/10 hover:text-brand-gold block px-3 py-3 rounded-md text-base font-medium transition-colors" data-i18n="nav-testimonials">Testimonials</a>
-            
-            <a href="#contact" class="text-brand-light-gray hover:bg-brand-gold/10 hover:text-brand-gold block px-3 py-3 rounded-md text-base font-medium transition-colors" data-i18n="nav-book">Book Consultation</a>
-            
-            <a href="#faq" class="text-brand-light-gray hover:bg-brand-gold/10 hover:text-brand-gold block px-3 py-3 rounded-md text-base font-medium transition-colors" data-i18n="nav-faq">FAQ</a>
+            <a href="#about" class="text-gray-700 hover:bg-orange-50 hover:text-brand-deep-blue block px-3 py-3 rounded-md text-base font-medium transition-colors" data-i18n="nav-about">About</a>
+            <a href="#services" class="text-gray-700 hover:bg-orange-50 hover:text-brand-deep-blue block px-3 py-3 rounded-md text-base font-medium transition-colors" data-i18n="nav-services">Services</a>
+            <a href="#products" class="text-gray-700 hover:bg-orange-50 hover:text-brand-deep-blue block px-3 py-3 rounded-md text-base font-medium transition-colors" data-i18n="nav-products">Products</a>
+            <a href="#album" class="text-gray-700 hover:bg-orange-50 hover:text-brand-deep-blue block px-3 py-3 rounded-md text-base font-medium transition-colors" data-i18n="nav-album">Gallery</a>
+            <a href="#testimonials" class="text-gray-700 hover:bg-orange-50 hover:text-brand-deep-blue block px-3 py-3 rounded-md text-base font-medium transition-colors" data-i18n="nav-testimonials">Testimonials</a>
+            <a href="#contact" class="text-gray-700 hover:bg-orange-50 hover:text-brand-deep-blue block px-3 py-3 rounded-md text-base font-medium transition-colors" data-i18n="nav-book">Book Consultation</a>
+            <a href="#faq" class="text-gray-700 hover:bg-orange-50 hover:text-brand-deep-blue block px-3 py-3 rounded-md text-base font-medium transition-colors" data-i18n="nav-faq">FAQ</a>
 
             <!-- Mobile Language Toggle -->
-            <button id="lang-toggle-mobile" class="w-full text-left text-brand-gold hover:bg-brand-gold/10 block px-3 py-3 rounded-md text-base font-medium transition-colors">
+            <button id="lang-toggle-mobile" class="w-full text-left text-brand-gold font-bold hover:bg-orange-50 block px-3 py-3 rounded-md text-base transition-colors">
                 Switch Language / भाषा बदलें
             </button>
         </div>
         
-        <div class="px-6 py-4 mt-auto border-t border-brand-light-gray/10">
-             <p class="text-xs text-brand-light-gray uppercase tracking-widest mb-4 font-semibold" data-i18n="footer-connect">Connect With Us</p>
+        <div class="px-6 py-4 mt-auto border-t border-gray-100">
+             <p class="text-xs text-gray-400 uppercase tracking-widest mb-4 font-semibold" data-i18n="footer-connect">Connect With Us</p>
              <div class="flex space-x-6">
-                <a href="https://www.facebook.com/astro.neerajsharma" class="text-brand-light-gray hover:text-brand-gold"><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg></a>
-                <a href="https://www.instagram.com/patan.wale.guruji" class="text-brand-light-gray hover:text-brand-gold"><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" /></svg></a>
-                <a href="https://www.youtube.com/@patan.wale.guruji" class="text-brand-light-gray hover:text-brand-gold"><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M19.812 5.418c.86.21 1.532.881 1.742 1.742C22 8.96 22 12 22 12s0 3.04-.446 4.84c-.21.86-.881 1.532-1.742 1.742C18.04 19 12 19 12 19s-6.04 0-7.84-.418c-.86-.21-1.532-.881-1.742-1.742C2 15.04 2 12 2 12s0-3.04.418-4.84c.21-.86.881-1.532 1.742-1.742C5.96 5 12 5 12 5s6.04 0 7.812.418zM9.94 14.582V9.418L14.82 12 9.94 14.582z" clip-rule="evenodd" /></svg></a>
-            </div>
-            <div class="mt-6 space-y-2">
-                <a href="tel:+917987909015" class="block text-brand-gold font-medium">+91-7987909015</a>
-                <a href="tel:+919755513500" class="block text-brand-gold font-medium">+91-9755513500</a>
+                <a href="https://www.facebook.com/astro.neerajsharma" class="text-gray-400 hover:text-[#1877F2]"><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg></a>
+                <a href="https://www.instagram.com/patan.wale.guruji" class="text-gray-400 hover:text-[#E4405F]"><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" /></svg></a>
+                <a href="https://www.youtube.com/@patan.wale.guruji" class="text-gray-400 hover:text-[#FF0000]"><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M19.812 5.418c.86.21 1.532.881 1.742 1.742C22 8.96 22 12 22 12s0 3.04-.446 4.84c-.21.86-.881 1.532-1.742 1.742C18.04 19 12 19 12 19s-6.04 0-7.84-.418c-.86-.21-1.532-.881-1.742-1.742C2 15.04 2 12 2 12s0-3.04.418-4.84c.21-.86.881-1.532 1.742-1.742C5.96 5 12 5 12 5s6.04 0 7.812.418zM9.94 14.582V9.418L14.82 12 9.94 14.582z" clip-rule="evenodd" /></svg></a>
             </div>
         </div>
     </div>
 
     <!-- Mobile Menu Backdrop -->
-    <div id="mobile-menu-backdrop" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-40 hidden transition-opacity duration-300"></div>
+    <div id="mobile-menu-backdrop" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-40 hidden transition-opacity duration-300"></div>
 
-    <!-- Hero Section -->
-    <header class="relative overflow-hidden min-h-[90vh] flex items-center">
+    <!-- Hero Section (Dark for contrast) -->
+    <header class="relative overflow-hidden min-h-[90vh] flex items-center bg-[#0f172a]">
         <!-- Background Gradient & Effects -->
-        <div class="absolute inset-0 bg-gradient-to-b from-brand-deep-blue via-[#0f2444] to-brand-deep-blue z-0"></div>
-        <div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(#d4af37 1px, transparent 1px); background-size: 40px 40px;"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-[#1e1b4b] via-[#0f172a] to-[#0f172a] z-0"></div>
+        <div class="absolute inset-0 opacity-30" style="background-image: radial-gradient(#d4af37 1px, transparent 1px); background-size: 40px 40px;"></div>
         
         <!-- Central Content -->
         <div class="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 text-center relative z-10 pt-10">
-            <div class="inline-block mb-6 px-4 py-1 rounded-full border border-brand-gold/30 bg-brand-deep-blue/50 text-brand-gold text-sm font-medium tracking-wider uppercase animate-fade-in-up" data-i18n="hero-badge">
+            <div class="inline-block mb-6 px-4 py-1 rounded-full border border-yellow-500/50 bg-yellow-500/10 text-yellow-400 text-sm font-medium tracking-wider uppercase animate-fade-in-up" data-i18n="hero-badge">
                 Vedic Astrology & Vastu Expert
             </div>
             <h1 class="text-5xl md:text-7xl font-bold text-white leading-tight mb-8 drop-shadow-lg">
                 <span data-i18n="hero-title-1">Guiding Your Path</span> <br>
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 to-brand-gold" data-i18n="hero-title-2">With the Stars</span>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 to-yellow-500" data-i18n="hero-title-2">With the Stars</span>
             </h1>
-            <p class="text-xl text-brand-light-gray max-w-3xl mx-auto mb-12 leading-relaxed" data-i18n="hero-desc">
+            <p class="text-xl text-gray-300 max-w-3xl mx-auto mb-12 leading-relaxed" data-i18n="hero-desc">
                 Unlock the secrets of your destiny with personalized horoscopes, Vastu consultation, and Numerology insights from Patan Wale Guruji.
             </p>
             <div class="flex flex-col sm:flex-row justify-center items-center gap-5">
                 <!-- Button -->
-                <a href="#contact" class="w-full sm:w-auto bg-brand-gold text-brand-deep-blue font-bold py-4 px-10 rounded-lg shadow-[0_0_20px_rgba(212,175,55,0.3)] hover:bg-yellow-500 transition-all duration-300 transform hover:scale-105 text-lg" data-i18n="btn-book">
+                <a href="#contact" class="w-full sm:w-auto bg-brand-accent text-brand-dark font-bold py-4 px-10 rounded-lg shadow-lg hover:bg-yellow-400 transition-all duration-300 transform hover:scale-105 text-lg" data-i18n="btn-book">
                     Book a Consultation
                 </a>
-                <a href="#services" class="w-full sm:w-auto bg-transparent border-2 border-brand-gold/50 text-brand-gold font-medium py-4 px-10 rounded-lg hover:bg-brand-gold/10 hover:border-brand-gold transition-all duration-300 text-lg" data-i18n="btn-services">
+                <a href="#services" class="w-full sm:w-auto bg-transparent border-2 border-brand-accent text-brand-accent font-medium py-4 px-10 rounded-lg hover:bg-brand-accent/10 transition-all duration-300 text-lg" data-i18n="btn-services">
                     Explore Services
                 </a>
             </div>
         </div>
     </header>
 
-    <!-- About Section -->
-    <section id="about" class="py-24 bg-brand-deep-blue relative">
-        <div class="absolute top-0 left-0 w-full h-20 bg-gradient-to-b from-[#0f2444] to-brand-deep-blue"></div>
+    <!-- About Section (White Background) -->
+    <section id="about" class="py-24 bg-white relative">
         <div class="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                 <!-- Image Frame (Animated) -->
                 <div class="order-2 lg:order-1 flex justify-center reveal">
                     <div class="relative w-full max-w-md aspect-square">
-                        <div class="absolute inset-0 border-4 border-brand-gold/20 rounded-2xl transform translate-x-4 translate-y-4"></div>
-                        <div class="absolute inset-0 bg-brand-gold/10 rounded-2xl transform -translate-x-4 -translate-y-4"></div>
-                        <div class="relative h-full w-full rounded-2xl overflow-hidden shadow-2xl border border-brand-gold/30 bg-brand-deep-blue">
+                        <div class="absolute inset-0 border-4 border-orange-200 rounded-2xl transform translate-x-4 translate-y-4"></div>
+                        <div class="absolute inset-0 bg-orange-100 rounded-2xl transform -translate-x-4 -translate-y-4"></div>
+                        <div class="relative h-full w-full rounded-2xl overflow-hidden shadow-2xl border border-orange-200 bg-white">
                              <!-- Placeholder Image -->
                             <img src="assets/images/astro-neeraj-sharma.jpg" 
                                  alt="Astro Neeraj Sharma"
-                                 onerror="this.onerror=null;this.src='https://placehold.co/600x600/0a192f/d4af37?text=Astro+Neeraj+Sharma&font=playfair';"
+                                 onerror="this.onerror=null;this.src='https://placehold.co/600x600/fff7ed/d4af37?text=Astro+Neeraj+Sharma&font=playfair';"
                                  class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
                         </div>
                     </div>
@@ -259,9 +248,9 @@
 
                 <!-- Text Content (Animated) -->
                 <div class="order-1 lg:order-2 reveal reveal-delay-100">
-                    <h2 class="text-4xl font-bold text-white mb-6" data-i18n="about-title">About Guruji</h2>
+                    <h2 class="text-4xl font-bold text-brand-deep-blue mb-4" data-i18n="about-title">About Guruji</h2>
                     <h3 class="text-2xl text-brand-gold mb-6 font-serif italic" data-i18n="about-subtitle">"Astrology is the science of life's clock."</h3>
-                    <div class="space-y-6 text-lg text-brand-light-gray leading-relaxed">
+                    <div class="space-y-6 text-lg text-gray-700 leading-relaxed">
                         <p data-i18n="about-p1">
                             Welcome! I am <strong>Neeraj Sharma</strong>, affectionately known as <em>Patan Wale Guruji</em>. Based in the historic city of Indore, I have dedicated over 25 years to the study and practice of Vedic sciences.
                         </p>
@@ -274,13 +263,13 @@
                     </div>
                     
                     <div class="mt-10 grid grid-cols-2 gap-6">
-                        <div class="p-4 bg-brand-deep-blue/50 border border-brand-gold/20 rounded-lg text-center">
+                        <div class="p-4 bg-orange-50 border border-orange-200 rounded-lg text-center">
                             <span class="block text-3xl font-bold text-brand-gold font-serif" data-i18n="stat-1-num">25+</span>
-                            <span class="text-sm text-brand-light-gray" data-i18n="stat-1-text">Years Experience</span>
+                            <span class="text-sm text-gray-600" data-i18n="stat-1-text">Years Experience</span>
                         </div>
-                        <div class="p-4 bg-brand-deep-blue/50 border border-brand-gold/20 rounded-lg text-center">
+                        <div class="p-4 bg-orange-50 border border-orange-200 rounded-lg text-center">
                             <span class="block text-3xl font-bold text-brand-gold font-serif" data-i18n="stat-2-num">5k+</span>
-                            <span class="text-sm text-brand-light-gray" data-i18n="stat-2-text">Happy Clients</span>
+                            <span class="text-sm text-gray-600" data-i18n="stat-2-text">Happy Clients</span>
                         </div>
                     </div>
                 </div>
@@ -288,125 +277,126 @@
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="py-24 bg-[#0d1f3a]">
+    <!-- Services Section (Light Cream Background) -->
+    <section id="services" class="py-24 bg-[#fff7ed]">
         <div class="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 reveal">
                 <span class="text-brand-gold font-medium uppercase tracking-wider text-sm" data-i18n="services-badge">What I Offer</span>
-                <h2 class="text-4xl font-bold text-white mt-2" data-i18n="services-title">Divine Services</h2>
+                <h2 class="text-4xl font-bold text-brand-deep-blue mt-2" data-i18n="services-title">Divine Services</h2>
                 <div class="w-24 h-1 bg-brand-gold mx-auto mt-6 rounded-full"></div>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Services (Same as before) -->
-                <div class="group bg-brand-deep-blue p-8 rounded-xl border border-brand-gold/10 hover:border-brand-gold/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl reveal reveal-delay-100">
-                    <div class="w-14 h-14 bg-brand-gold/10 rounded-full flex items-center justify-center text-3xl mb-6 group-hover:bg-brand-gold group-hover:text-brand-deep-blue transition-colors">📜</div>
-                    <h3 class="text-2xl font-bold text-white mb-3" data-i18n="srv-1-title">Kundali Reading</h3>
-                    <p class="text-brand-light-gray leading-relaxed" data-i18n="srv-1-desc">An in-depth analysis of your birth chart to understand your life's purpose, challenges, and upcoming opportunities.</p>
+                <!-- Service Cards (White with shadow) -->
+                <div class="group bg-white p-8 rounded-xl border border-orange-100 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 reveal reveal-delay-100">
+                    <div class="w-14 h-14 bg-orange-50 rounded-full flex items-center justify-center text-3xl mb-6 text-brand-gold group-hover:bg-brand-gold group-hover:text-white transition-colors">📜</div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3" data-i18n="srv-1-title">Kundali Reading</h3>
+                    <p class="text-gray-600 leading-relaxed" data-i18n="srv-1-desc">An in-depth analysis of your birth chart to understand your life's purpose, challenges, and upcoming opportunities.</p>
                 </div>
-                <div class="group bg-brand-deep-blue p-8 rounded-xl border border-brand-gold/10 hover:border-brand-gold/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl reveal reveal-delay-200">
-                    <div class="w-14 h-14 bg-brand-gold/10 rounded-full flex items-center justify-center text-3xl mb-6 group-hover:bg-brand-gold group-hover:text-brand-deep-blue transition-colors">💞</div>
-                    <h3 class="text-2xl font-bold text-white mb-3" data-i18n="srv-2-title">Kundali Milan</h3>
-                    <p class="text-brand-light-gray leading-relaxed" data-i18n="srv-2-desc">Detailed compatibility matching for marriage or business partnerships to ensure long-term harmony and success.</p>
+                <div class="group bg-white p-8 rounded-xl border border-orange-100 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 reveal reveal-delay-200">
+                    <div class="w-14 h-14 bg-orange-50 rounded-full flex items-center justify-center text-3xl mb-6 text-brand-gold group-hover:bg-brand-gold group-hover:text-white transition-colors">💞</div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3" data-i18n="srv-2-title">Kundali Milan</h3>
+                    <p class="text-gray-600 leading-relaxed" data-i18n="srv-2-desc">Detailed compatibility matching for marriage or business partnerships to ensure long-term harmony and success.</p>
                 </div>
-                <div class="group bg-brand-deep-blue p-8 rounded-xl border border-brand-gold/10 hover:border-brand-gold/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl reveal reveal-delay-300">
-                    <div class="w-14 h-14 bg-brand-gold/10 rounded-full flex items-center justify-center text-3xl mb-6 group-hover:bg-brand-gold group-hover:text-brand-deep-blue transition-colors">🔢</div>
-                    <h3 class="text-2xl font-bold text-white mb-3" data-i18n="srv-3-title">Numerology</h3>
-                    <p class="text-brand-light-gray leading-relaxed" data-i18n="srv-3-desc">Discover the hidden meanings in your name and birth date. Understand your personality through the science of numbers.</p>
+                <div class="group bg-white p-8 rounded-xl border border-orange-100 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 reveal reveal-delay-300">
+                    <div class="w-14 h-14 bg-orange-50 rounded-full flex items-center justify-center text-3xl mb-6 text-brand-gold group-hover:bg-brand-gold group-hover:text-white transition-colors">🔢</div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3" data-i18n="srv-3-title">Numerology</h3>
+                    <p class="text-gray-600 leading-relaxed" data-i18n="srv-3-desc">Discover the hidden meanings in your name and birth date. Understand your personality through the science of numbers.</p>
                 </div>
-                <div class="group bg-brand-deep-blue p-8 rounded-xl border border-brand-gold/10 hover:border-brand-gold/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl reveal reveal-delay-100">
-                    <div class="w-14 h-14 bg-brand-gold/10 rounded-full flex items-center justify-center text-3xl mb-6 group-hover:bg-brand-gold group-hover:text-brand-deep-blue transition-colors">🏠</div>
-                    <h3 class="text-2xl font-bold text-white mb-3" data-i18n="srv-4-title">Vastu Shastra</h3>
-                    <p class="text-brand-light-gray leading-relaxed" data-i18n="srv-4-desc">Align your home or office with cosmic energy to promote harmony, prosperity, and positive vibes for your family.</p>
+                <div class="group bg-white p-8 rounded-xl border border-orange-100 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 reveal reveal-delay-100">
+                    <div class="w-14 h-14 bg-orange-50 rounded-full flex items-center justify-center text-3xl mb-6 text-brand-gold group-hover:bg-brand-gold group-hover:text-white transition-colors">🏠</div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3" data-i18n="srv-4-title">Vastu Shastra</h3>
+                    <p class="text-gray-600 leading-relaxed" data-i18n="srv-4-desc">Align your home or office with cosmic energy to promote harmony, prosperity, and positive vibes for your family.</p>
                 </div>
-                <div class="group bg-brand-deep-blue p-8 rounded-xl border border-brand-gold/10 hover:border-brand-gold/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl reveal reveal-delay-200">
-                    <div class="w-14 h-14 bg-brand-gold/10 rounded-full flex items-center justify-center text-3xl mb-6 group-hover:bg-brand-gold group-hover:text-brand-deep-blue transition-colors">🧐</div>
-                    <h3 class="text-2xl font-bold text-white mb-3" data-i18n="srv-5-title">Face Reading</h3>
-                    <p class="text-brand-light-gray leading-relaxed" data-i18n="srv-5-desc">Gain insights into personality, character, and future destiny by analyzing facial features—an ancient art of observation.</p>
+                <div class="group bg-white p-8 rounded-xl border border-orange-100 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 reveal reveal-delay-200">
+                    <div class="w-14 h-14 bg-orange-50 rounded-full flex items-center justify-center text-3xl mb-6 text-brand-gold group-hover:bg-brand-gold group-hover:text-white transition-colors">🧐</div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3" data-i18n="srv-5-title">Face Reading</h3>
+                    <p class="text-gray-600 leading-relaxed" data-i18n="srv-5-desc">Gain insights into personality, character, and future destiny by analyzing facial features—an ancient art of observation.</p>
                 </div>
-                <div class="group bg-brand-deep-blue p-8 rounded-xl border border-brand-gold/10 hover:border-brand-gold/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl reveal reveal-delay-300">
-                    <div class="w-14 h-14 bg-brand-gold/10 rounded-full flex items-center justify-center text-3xl mb-6 group-hover:bg-brand-gold group-hover:text-brand-deep-blue transition-colors">✋</div>
-                    <h3 class="text-2xl font-bold text-white mb-3" data-i18n="srv-6-title">Palmistry</h3>
-                    <p class="text-brand-light-gray leading-relaxed" data-i18n="srv-6-desc">Uncover the secrets of your life path, health, and fortune hidden in the lines and mounts of your hands.</p>
+                <div class="group bg-white p-8 rounded-xl border border-orange-100 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 reveal reveal-delay-300">
+                    <div class="w-14 h-14 bg-orange-50 rounded-full flex items-center justify-center text-3xl mb-6 text-brand-gold group-hover:bg-brand-gold group-hover:text-white transition-colors">✋</div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3" data-i18n="srv-6-title">Palmistry</h3>
+                    <p class="text-gray-600 leading-relaxed" data-i18n="srv-6-desc">Uncover the secrets of your life path, health, and fortune hidden in the lines and mounts of your hands.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- [NEW] Products Section -->
-    <section id="products" class="py-24 bg-brand-deep-blue relative border-t border-brand-gold/10">
+    <!-- Products Section (White Background) -->
+    <section id="products" class="py-24 bg-white relative border-t border-orange-100">
         <div class="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 reveal">
                 <span class="text-brand-gold font-medium uppercase tracking-wider text-sm">Shop</span>
-                <h2 class="text-4xl font-bold text-white mt-2" data-i18n="products-title">Spiritual Products</h2>
-                <p class="mt-4 text-brand-light-gray" data-i18n="products-subtitle">Authentic Gemstones & Yantras</p>
+                <h2 class="text-4xl font-bold text-brand-deep-blue mt-2" data-i18n="products-title">Spiritual Products</h2>
+                <p class="mt-4 text-gray-500" data-i18n="products-subtitle">Authentic Gemstones & Yantras</p>
                 <div class="w-24 h-1 bg-brand-gold mx-auto mt-6 rounded-full"></div>
             </div>
 
+            <!-- Updated Grid Structure for Better Alignment -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                 <!-- Product 1 -->
-                <div class="bg-[#0d1f3a] rounded-xl overflow-hidden border border-brand-gold/20 hover:border-brand-gold/60 transition-all duration-300 hover:shadow-2xl reveal">
-                    <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden bg-gray-900">
-                        <img src="https://placehold.co/400x400/0d1f3a/d4af37?text=Rudraksha" alt="Product" class="w-full h-64 object-cover transform hover:scale-110 transition-transform duration-500">
+                <div class="flex flex-col h-full bg-white rounded-xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 reveal">
+                    <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden bg-gray-100">
+                        <img src="https://placehold.co/400x400/fff7ed/b45309?text=Rudraksha" alt="Product" class="w-full h-64 object-cover transform hover:scale-110 transition-transform duration-500">
                     </div>
-                    <div class="p-5">
-                        <h3 class="text-xl font-bold text-white mb-2">5 Mukhi Rudraksha</h3>
-                        <div class="flex justify-between items-center text-sm mb-4">
-                            <span class="text-brand-light-gray"><span data-i18n="prod-weight">Net Weight</span>: 5g</span>
+                    <div class="p-5 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">5 Mukhi Rudraksha</h3>
+                        <div class="flex justify-between items-center text-sm mb-4 mt-auto">
+                            <span class="text-gray-500"><span data-i18n="prod-weight">Net Weight</span>: 5g</span>
                             <span class="text-brand-gold font-bold text-lg"><span data-i18n="prod-price">Price</span>: ₹500</span>
                         </div>
-                        <a href="#contact" class="block w-full text-center bg-brand-gold/10 text-brand-gold border border-brand-gold py-2 rounded hover:bg-brand-gold hover:text-brand-deep-blue transition-colors text-sm font-bold">
+                        <a href="#contact" class="block w-full text-center bg-brand-deep-blue text-white py-2 rounded hover:bg-brand-gold transition-colors text-sm font-bold">
                             Inquire Now
                         </a>
                     </div>
                 </div>
 
                 <!-- Product 2 -->
-                <div class="bg-[#0d1f3a] rounded-xl overflow-hidden border border-brand-gold/20 hover:border-brand-gold/60 transition-all duration-300 hover:shadow-2xl reveal reveal-delay-100">
-                    <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden bg-gray-900">
-                        <img src="https://placehold.co/400x400/0d1f3a/d4af37?text=Sri+Yantra" alt="Product" class="w-full h-64 object-cover transform hover:scale-110 transition-transform duration-500">
+                <div class="flex flex-col h-full bg-white rounded-xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 reveal reveal-delay-100">
+                    <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden bg-gray-100">
+                        <img src="https://placehold.co/400x400/fff7ed/b45309?text=Sri+Yantra" alt="Product" class="w-full h-64 object-cover transform hover:scale-110 transition-transform duration-500">
                     </div>
-                    <div class="p-5">
-                        <h3 class="text-xl font-bold text-white mb-2">Sri Yantra</h3>
-                        <div class="flex justify-between items-center text-sm mb-4">
-                            <span class="text-brand-light-gray"><span data-i18n="prod-weight">Net Weight</span>: 100g</span>
+                    <div class="p-5 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Sri Yantra</h3>
+                        <div class="flex justify-between items-center text-sm mb-4 mt-auto">
+                            <span class="text-gray-500"><span data-i18n="prod-weight">Net Weight</span>: 100g</span>
                             <span class="text-brand-gold font-bold text-lg"><span data-i18n="prod-price">Price</span>: ₹1100</span>
                         </div>
-                        <a href="#contact" class="block w-full text-center bg-brand-gold/10 text-brand-gold border border-brand-gold py-2 rounded hover:bg-brand-gold hover:text-brand-deep-blue transition-colors text-sm font-bold">
+                        <a href="#contact" class="block w-full text-center bg-brand-deep-blue text-white py-2 rounded hover:bg-brand-gold transition-colors text-sm font-bold">
                             Inquire Now
                         </a>
                     </div>
                 </div>
 
                 <!-- Product 3 -->
-                <div class="bg-[#0d1f3a] rounded-xl overflow-hidden border border-brand-gold/20 hover:border-brand-gold/60 transition-all duration-300 hover:shadow-2xl reveal reveal-delay-200">
-                    <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden bg-gray-900">
-                        <img src="https://placehold.co/400x400/0d1f3a/d4af37?text=Gemstone" alt="Product" class="w-full h-64 object-cover transform hover:scale-110 transition-transform duration-500">
+                <div class="flex flex-col h-full bg-white rounded-xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 reveal reveal-delay-200">
+                    <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden bg-gray-100">
+                        <img src="https://placehold.co/400x400/fff7ed/b45309?text=Gemstone" alt="Product" class="w-full h-64 object-cover transform hover:scale-110 transition-transform duration-500">
                     </div>
-                    <div class="p-5">
-                        <h3 class="text-xl font-bold text-white mb-2">Yellow Sapphire</h3>
-                        <div class="flex justify-between items-center text-sm mb-4">
-                            <span class="text-brand-light-gray"><span data-i18n="prod-weight">Net Weight</span>: 3.5 Ratti</span>
+                    <div class="p-5 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Yellow Sapphire</h3>
+                        <div class="flex justify-between items-center text-sm mb-4 mt-auto">
+                            <span class="text-gray-500"><span data-i18n="prod-weight">Net Weight</span>: 3.5 Ratti</span>
                             <span class="text-brand-gold font-bold text-lg"><span data-i18n="prod-price">Price</span>: ₹5000</span>
                         </div>
-                        <a href="#contact" class="block w-full text-center bg-brand-gold/10 text-brand-gold border border-brand-gold py-2 rounded hover:bg-brand-gold hover:text-brand-deep-blue transition-colors text-sm font-bold">
+                        <a href="#contact" class="block w-full text-center bg-brand-deep-blue text-white py-2 rounded hover:bg-brand-gold transition-colors text-sm font-bold">
                             Inquire Now
                         </a>
                     </div>
                 </div>
 
                 <!-- Product 4 -->
-                <div class="bg-[#0d1f3a] rounded-xl overflow-hidden border border-brand-gold/20 hover:border-brand-gold/60 transition-all duration-300 hover:shadow-2xl reveal reveal-delay-300">
-                    <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden bg-gray-900">
-                        <img src="https://placehold.co/400x400/0d1f3a/d4af37?text=Crystal+Mala" alt="Product" class="w-full h-64 object-cover transform hover:scale-110 transition-transform duration-500">
+                <div class="flex flex-col h-full bg-white rounded-xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 reveal reveal-delay-300">
+                    <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden bg-gray-100">
+                        <img src="https://placehold.co/400x400/fff7ed/b45309?text=Crystal+Mala" alt="Product" class="w-full h-64 object-cover transform hover:scale-110 transition-transform duration-500">
                     </div>
-                    <div class="p-5">
-                        <h3 class="text-xl font-bold text-white mb-2">Crystal Mala</h3>
-                        <div class="flex justify-between items-center text-sm mb-4">
-                            <span class="text-brand-light-gray"><span data-i18n="prod-weight">Net Weight</span>: 50g</span>
+                    <div class="p-5 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Crystal Mala</h3>
+                        <div class="flex justify-between items-center text-sm mb-4 mt-auto">
+                            <span class="text-gray-500"><span data-i18n="prod-weight">Net Weight</span>: 50g</span>
                             <span class="text-brand-gold font-bold text-lg"><span data-i18n="prod-price">Price</span>: ₹750</span>
                         </div>
-                        <a href="#contact" class="block w-full text-center bg-brand-gold/10 text-brand-gold border border-brand-gold py-2 rounded hover:bg-brand-gold hover:text-brand-deep-blue transition-colors text-sm font-bold">
+                        <a href="#contact" class="block w-full text-center bg-brand-deep-blue text-white py-2 rounded hover:bg-brand-gold transition-colors text-sm font-bold">
                             Inquire Now
                         </a>
                     </div>
@@ -415,98 +405,87 @@
         </div>
     </section>
 
-    <!-- [NEW] Album Section -->
-    <section id="album" class="py-24 bg-[#0d1f3a]">
+    <!-- Album Section (Dark Background for Contrast) -->
+    <section id="album" class="py-24 bg-gray-900 relative">
         <div class="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 reveal">
-                <span class="text-brand-gold font-medium uppercase tracking-wider text-sm">Gallery</span>
+                <span class="text-yellow-400 font-medium uppercase tracking-wider text-sm">Gallery</span>
                 <h2 class="text-4xl font-bold text-white mt-2" data-i18n="album-title">Photo Gallery</h2>
-                <p class="mt-4 text-brand-light-gray" data-i18n="album-subtitle">Glimpses of events and consultations.</p>
+                <p class="mt-4 text-gray-400" data-i18n="album-subtitle">Glimpses of events and consultations.</p>
             </div>
 
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <!-- Photo 1 -->
-                <div class="group relative overflow-hidden rounded-lg aspect-square reveal">
-                    <img src="https://placehold.co/400x400/0a192f/d4af37?text=Event+1" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-brand-deep-blue/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                        <span class="text-white font-serif border border-brand-gold px-4 py-2">View</span>
+                <div class="group relative overflow-hidden rounded-lg aspect-square reveal border border-gray-800">
+                    <img src="https://placehold.co/400x400/1e293b/fbbf24?text=Event+1" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500 opacity-90 hover:opacity-100">
+                    <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <span class="text-white border border-yellow-400 px-4 py-2 font-serif">View</span>
                     </div>
                 </div>
                 <!-- Photo 2 -->
-                <div class="group relative overflow-hidden rounded-lg aspect-square reveal reveal-delay-100">
-                    <img src="https://placehold.co/400x400/0a192f/d4af37?text=Consultation" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-brand-deep-blue/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                        <span class="text-white font-serif border border-brand-gold px-4 py-2">View</span>
+                <div class="group relative overflow-hidden rounded-lg aspect-square reveal reveal-delay-100 border border-gray-800">
+                    <img src="https://placehold.co/400x400/1e293b/fbbf24?text=Consultation" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500 opacity-90 hover:opacity-100">
+                    <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <span class="text-white border border-yellow-400 px-4 py-2 font-serif">View</span>
                     </div>
                 </div>
                 <!-- Photo 3 -->
-                <div class="group relative overflow-hidden rounded-lg aspect-square reveal reveal-delay-200">
-                    <img src="https://placehold.co/400x400/0a192f/d4af37?text=Puja" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-brand-deep-blue/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                        <span class="text-white font-serif border border-brand-gold px-4 py-2">View</span>
+                <div class="group relative overflow-hidden rounded-lg aspect-square reveal reveal-delay-200 border border-gray-800">
+                    <img src="https://placehold.co/400x400/1e293b/fbbf24?text=Puja" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500 opacity-90 hover:opacity-100">
+                    <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <span class="text-white border border-yellow-400 px-4 py-2 font-serif">View</span>
                     </div>
                 </div>
                 <!-- Photo 4 -->
-                <div class="group relative overflow-hidden rounded-lg aspect-square reveal reveal-delay-300">
-                    <img src="https://placehold.co/400x400/0a192f/d4af37?text=Awards" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-brand-deep-blue/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                        <span class="text-white font-serif border border-brand-gold px-4 py-2">View</span>
+                <div class="group relative overflow-hidden rounded-lg aspect-square reveal reveal-delay-300 border border-gray-800">
+                    <img src="https://placehold.co/400x400/1e293b/fbbf24?text=Awards" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500 opacity-90 hover:opacity-100">
+                    <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <span class="text-white border border-yellow-400 px-4 py-2 font-serif">View</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials -->
-    <section id="testimonials" class="py-24 bg-brand-deep-blue relative">
-        <!-- Decorative quotes -->
-        <div class="absolute top-20 left-10 text-9xl text-brand-gold/5 font-serif leading-none select-none">“</div>
-        
-        <div class="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 relative z-10">
+    <!-- Testimonials (Light Cream Background) -->
+    <section id="testimonials" class="py-24 bg-[#fff7ed]">
+        <div class="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 reveal">
-                <h2 class="text-4xl font-bold text-white" data-i18n="testi-title">Words of Trust</h2>
-                <p class="mt-4 text-brand-light-gray" data-i18n="testi-subtitle">Stories from those who have found guidance.</p>
+                <h2 class="text-4xl font-bold text-brand-deep-blue" data-i18n="testi-title">Words of Trust</h2>
+                <p class="mt-4 text-gray-600" data-i18n="testi-subtitle">Stories from those who have found guidance.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Card 1 (Animated) -->
-                <div class="bg-[#0f2444] p-8 rounded-xl border border-brand-gold/10 relative reveal reveal-delay-100">
-                    <div class="flex text-brand-gold mb-4">
-                        ★★★★★
-                    </div>
-                    <p class="text-brand-light-gray italic mb-6" data-i18n="testi-1-text">
+                <!-- Card 1 -->
+                <div class="bg-white p-8 rounded-xl border border-orange-100 shadow-md relative reveal reveal-delay-100">
+                    <div class="flex text-yellow-400 mb-4">★★★★★</div>
+                    <p class="text-gray-600 italic mb-6" data-i18n="testi-1-text">
                         "Neeraj Guruji's reading was incredibly accurate. I felt a sense of clarity I hadn't felt in years. Highly recommend his guidance for anyone feeling lost."
                     </p>
                     <div>
-                        <p class="text-white font-bold text-lg" data-i18n="testi-1-name">Neeraj Bhargav</p>
+                        <p class="text-gray-900 font-bold text-lg" data-i18n="testi-1-name">Neeraj Bhargav</p>
                         <p class="text-brand-gold text-sm" data-i18n="testi-1-role">Businessman</p>
                     </div>
                 </div>
-
-                <!-- Card 2 (Animated) -->
-                <div class="bg-[#0f2444] p-8 rounded-xl border border-brand-gold/10 relative mt-0 md:-mt-4 shadow-2xl reveal reveal-delay-200">
-                    <div class="flex text-brand-gold mb-4">
-                        ★★★★★
-                    </div>
-                    <p class="text-brand-light-gray italic mb-6" data-i18n="testi-2-text">
+                <!-- Card 2 -->
+                <div class="bg-white p-8 rounded-xl border border-orange-100 shadow-xl relative mt-0 md:-mt-4 reveal reveal-delay-200">
+                    <div class="flex text-yellow-400 mb-4">★★★★★</div>
+                    <p class="text-gray-600 italic mb-6" data-i18n="testi-2-text">
                         "The Vastu consultation for my new office made a tangible difference. The energy feels much better and business has picked up. Thank you, Guruji."
                     </p>
                     <div>
-                        <p class="text-white font-bold text-lg" data-i18n="testi-2-name">Harsh Kataria</p>
+                        <p class="text-gray-900 font-bold text-lg" data-i18n="testi-2-name">Harsh Kataria</p>
                         <p class="text-brand-gold text-sm" data-i18n="testi-2-role">Property Broker</p>
                     </div>
                 </div>
-
-                <!-- Card 3 (Animated) -->
-                <div class="bg-[#0f2444] p-8 rounded-xl border border-brand-gold/10 relative reveal reveal-delay-300">
-                    <div class="flex text-brand-gold mb-4">
-                        ★★★★★
-                    </div>
-                    <p class="text-brand-light-gray italic mb-6" data-i18n="testi-3-text">
+                <!-- Card 3 -->
+                <div class="bg-white p-8 rounded-xl border border-orange-100 shadow-md relative reveal reveal-delay-300">
+                    <div class="flex text-yellow-400 mb-4">★★★★★</div>
+                    <p class="text-gray-600 italic mb-6" data-i18n="testi-3-text">
                         "Best Astrologer in Indore. He understands problems very well and provides pocket-friendly remedies that are easy to follow. Very humble person."
                     </p>
                     <div>
-                        <p class="text-white font-bold text-lg" data-i18n="testi-3-name">K Kishor Kothari</p>
+                        <p class="text-gray-900 font-bold text-lg" data-i18n="testi-3-name">K Kishor Kothari</p>
                         <p class="text-brand-gold text-sm" data-i18n="testi-3-role">Businessman</p>
                     </div>
                 </div>
@@ -514,153 +493,145 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-24 bg-brand-gold relative">
+    <!-- Contact Section (Dark Navy with Gold Accent) -->
+    <section id="contact" class="py-24 bg-brand-deep-blue relative">
         <div class="container mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-            <div class="bg-white rounded-2xl shadow-2xl overflow-hidden">
-                <div class="grid grid-cols-1 md:grid-cols-2">
+            <div class="bg-white rounded-2xl shadow-2xl overflow-hidden flex flex-col md:flex-row">
+                
+                <!-- Contact Info (Left Side) -->
+                <div class="bg-slate-900 p-10 md:p-12 text-white flex flex-col justify-center md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-6" data-i18n="contact-title">Get in Touch</h2>
+                    <p class="text-gray-400 mb-10" data-i18n="contact-subtitle">
+                        Ready to find clarity? Reach out directly or fill out the form to schedule your consultation.
+                    </p>
                     
-                    <!-- Contact Info -->
-                    <div class="bg-brand-deep-blue p-10 md:p-12 text-white flex flex-col justify-center">
-                        <h2 class="text-3xl font-bold mb-6" data-i18n="contact-title">Get in Touch</h2>
-                        <p class="text-brand-light-gray mb-10" data-i18n="contact-subtitle">
-                            Ready to find clarity? Reach out directly or fill out the form to schedule your consultation.
-                        </p>
-                        
-                        <div class="space-y-6">
-                            <div class="flex items-start space-x-4">
-                                <div class="bg-brand-gold/20 p-3 rounded-full text-brand-gold">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
-                                </div>
-                                <div>
-                                    <p class="text-sm text-brand-light-gray" data-i18n="contact-label-phone">Phone</p>
-                                    <a href="tel:+917987909015" class="block font-bold hover:text-brand-gold transition-colors">+91-7987909015</a>
-                                    <a href="tel:+919755513500" class="block font-bold hover:text-brand-gold transition-colors">+91-9755513500</a>
-                                </div>
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-white/10 p-3 rounded-full text-brand-accent">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
                             </div>
-
-                            <div class="flex items-start space-x-4">
-                                <div class="bg-brand-gold/20 p-3 rounded-full text-brand-gold">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
-                                </div>
-                                <div>
-                                    <p class="text-sm text-brand-light-gray" data-i18n="contact-label-email">Email</p>
-                                    <a href="mailto:gurujipatanwale@gmail.com" class="block font-bold hover:text-brand-gold transition-colors break-all">gurujipatanwale@gmail.com</a>
-                                </div>
+                            <div>
+                                <p class="text-sm text-gray-400" data-i18n="contact-label-phone">Phone</p>
+                                <a href="tel:+917987909015" class="block font-bold hover:text-brand-accent transition-colors">+91-7987909015</a>
+                                <a href="tel:+919755513500" class="block font-bold hover:text-brand-accent transition-colors">+91-9755513500</a>
                             </div>
+                        </div>
 
-                            <div class="flex items-start space-x-4">
-                                <div class="bg-brand-gold/20 p-3 rounded-full text-brand-gold">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
-                                </div>
-                                <div>
-                                    <p class="text-sm text-brand-light-gray" data-i18n="contact-label-loc">Location</p>
-                                    <p class="font-bold" data-i18n="contact-loc-val">Indore, Madhya Pradesh, India</p>
-                                </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-white/10 p-3 rounded-full text-brand-accent">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-400" data-i18n="contact-label-email">Email</p>
+                                <a href="mailto:gurujipatanwale@gmail.com" class="block font-bold hover:text-brand-accent transition-colors break-all">gurujipatanwale@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-white/10 p-3 rounded-full text-brand-accent">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-400" data-i18n="contact-label-loc">Location</p>
+                                <p class="font-bold" data-i18n="contact-loc-val">Indore, Madhya Pradesh, India</p>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <!-- Web3Forms Native Form -->
-                    <div class="bg-white p-8 md:p-10 flex flex-col justify-center relative">
-                        <h3 class="text-2xl font-bold text-gray-800 mb-6 font-serif" data-i18n="form-title">Send a Message</h3>
-                        
-                        <!-- Form element with ID and no action/method since JS handles it -->
-                        <form id="contact-form" class="space-y-5">
-                            <!-- Access Key -->
-                            <input type="hidden" name="access_key" value="e056b229-7ba4-4818-9a3a-14d62d14dbbe">
-                            
-                            <!-- Optional: Subject -->
-                            <input type="hidden" name="subject" value="New Consultation Inquiry">
+                <!-- Web3Forms Native Form (Right Side) -->
+                <div class="bg-white p-8 md:p-10 flex flex-col justify-center md:w-1/2">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6 font-serif" data-i18n="form-title">Send a Message</h3>
+                    
+                    <form id="contact-form" class="space-y-5">
+                        <input type="hidden" name="access_key" value="e056b229-7ba4-4818-9a3a-14d62d14dbbe">
+                        <input type="hidden" name="subject" value="New Consultation Inquiry">
 
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-1" data-i18n="form-name">Full Name</label>
+                            <input type="text" name="name" id="name" required class="form-input border-gray-300" placeholder="Your Name">
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-4">
                             <div>
-                                <label for="name" class="block text-sm font-medium text-gray-700 mb-1" data-i18n="form-name">Full Name</label>
-                                <input type="text" name="name" id="name" required class="form-input" placeholder="Your Name">
+                                <label for="phone" class="block text-sm font-medium text-gray-700 mb-1" data-i18n="form-phone">Phone Number</label>
+                                <input type="tel" name="phone" id="phone" required class="form-input border-gray-300" placeholder="+91...">
                             </div>
-
-                            <div class="grid grid-cols-2 gap-4">
-                                <div>
-                                    <label for="phone" class="block text-sm font-medium text-gray-700 mb-1" data-i18n="form-phone">Phone Number</label>
-                                    <input type="tel" name="phone" id="phone" required class="form-input" placeholder="+91...">
-                                </div>
-                                <div>
-                                    <label for="service" class="block text-sm font-medium text-gray-700 mb-1" data-i18n="form-service">Service</label>
-                                    <select name="service" id="service" class="form-input">
-                                        <option value="Consultation" data-i18n="opt-general">General Inquiry</option>
-                                        <option value="Kundali Reading" data-i18n="opt-kundali">Kundali Reading</option>
-                                        <option value="Match Making" data-i18n="opt-match">Match Making</option>
-                                        <option value="Vastu" data-i18n="opt-vastu">Vastu Shastra</option>
-                                        <option value="Numerology" data-i18n="opt-numerology">Numerology</option>
-                                    </select>
-                                </div>
-                            </div>
-
                             <div>
-                                <label for="message" class="block text-sm font-medium text-gray-700 mb-1" data-i18n="form-msg">Message</label>
-                                <textarea name="message" id="message" rows="4" required class="form-input" placeholder="How can I help you?"></textarea>
+                                <label for="service" class="block text-sm font-medium text-gray-700 mb-1" data-i18n="form-service">Service</label>
+                                <select name="service" id="service" class="form-input border-gray-300">
+                                    <option value="Consultation" data-i18n="opt-general">General Inquiry</option>
+                                    <option value="Kundali Reading" data-i18n="opt-kundali">Kundali Reading</option>
+                                    <option value="Match Making" data-i18n="opt-match">Match Making</option>
+                                    <option value="Vastu" data-i18n="opt-vastu">Vastu Shastra</option>
+                                    <option value="Numerology" data-i18n="opt-numerology">Numerology</option>
+                                </select>
                             </div>
+                        </div>
 
-                            <button type="submit" id="submit-button" class="w-full bg-brand-deep-blue text-white font-bold py-3 px-6 rounded-md hover:bg-[#1a2f4e] transition-colors shadow-md flex justify-center items-center gap-2">
-                                <span data-i18n="form-btn">Send Message</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-brand-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                </svg>
-                            </button>
-                        </form>
-                    </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1" data-i18n="form-msg">Message</label>
+                            <textarea name="message" id="message" rows="4" required class="form-input border-gray-300" placeholder="How can I help you?"></textarea>
+                        </div>
+
+                        <button type="submit" id="submit-button" class="w-full bg-brand-deep-blue text-white font-bold py-3 px-6 rounded-md hover:bg-blue-900 transition-colors shadow-md flex justify-center items-center gap-2">
+                            <span data-i18n="form-btn">Send Message</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                            </svg>
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section id="faq" class="py-20 bg-brand-deep-blue border-t border-brand-gold/10">
+    <!-- FAQ Section (Light Cream Background) -->
+    <section id="faq" class="py-20 bg-[#fff7ed]">
         <div class="container mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12 reveal">
-                <h2 class="text-3xl font-bold text-white" data-i18n="faq-title">Frequently Asked Questions</h2>
+                <h2 class="text-3xl font-bold text-brand-deep-blue" data-i18n="faq-title">Frequently Asked Questions</h2>
             </div>
 
             <div class="space-y-4 reveal reveal-delay-100">
                 <!-- Q1 -->
-                <details class="bg-[#0f2444] border border-brand-gold/20 rounded-lg overflow-hidden group">
+                <details class="bg-white border border-orange-200 rounded-lg overflow-hidden group shadow-sm">
                     <summary class="faq-question cursor-pointer p-6 flex justify-between items-center select-none">
-                        <h3 class="text-lg font-semibold text-brand-gold group-hover:text-white transition-colors" data-i18n="faq-q1">
+                        <h3 class="text-lg font-semibold text-gray-800 group-hover:text-brand-deep-blue transition-colors" data-i18n="faq-q1">
                             What do I need for a reading?
                         </h3>
                         <span class="faq-icon text-brand-gold text-2xl font-bold">+</span>
                     </summary>
-                    <div class="faq-answer p-6 pt-0 border-t border-brand-gold/10">
-                        <p class="mt-2 text-brand-light-gray" data-i18n="faq-a1">
+                    <div class="faq-answer p-6 pt-0 border-t border-orange-100">
+                        <p class="mt-2 text-gray-600" data-i18n="faq-a1">
                             For a detailed Vedic reading, I will require your exact date of birth, time of birth, and place of birth. For other readings, we can discuss the requirements during our initial contact.
                         </p>
                     </div>
                 </details>
-
                 <!-- Q2 -->
-                <details class="bg-[#0f2444] border border-brand-gold/20 rounded-lg overflow-hidden group">
+                <details class="bg-white border border-orange-200 rounded-lg overflow-hidden group shadow-sm">
                     <summary class="faq-question cursor-pointer p-6 flex justify-between items-center select-none">
-                        <h3 class="text-lg font-semibold text-brand-gold group-hover:text-white transition-colors" data-i18n="faq-q2">
+                        <h3 class="text-lg font-semibold text-gray-800 group-hover:text-brand-deep-blue transition-colors" data-i18n="faq-q2">
                             Are my readings confidential?
                         </h3>
                         <span class="faq-icon text-brand-gold text-2xl font-bold">+</span>
                     </summary>
-                    <div class="faq-answer p-6 pt-0 border-t border-brand-gold/10">
-                        <p class="mt-2 text-brand-light-gray" data-i18n="faq-a2">
+                    <div class="faq-answer p-6 pt-0 border-t border-orange-100">
+                        <p class="mt-2 text-gray-600" data-i18n="faq-a2">
                             Absolutely. All consultations and personal information are treated with the utmost privacy and confidentiality. Your trust is my priority.
                         </p>
                     </div>
                 </details>
-
                 <!-- Q3 -->
-                <details class="bg-[#0f2444] border border-brand-gold/20 rounded-lg overflow-hidden group">
+                <details class="bg-white border border-orange-200 rounded-lg overflow-hidden group shadow-sm">
                     <summary class="faq-question cursor-pointer p-6 flex justify-between items-center select-none">
-                        <h3 class="text-lg font-semibold text-brand-gold group-hover:text-white transition-colors" data-i18n="faq-q3">
+                        <h3 class="text-lg font-semibold text-gray-800 group-hover:text-brand-deep-blue transition-colors" data-i18n="faq-q3">
                             How do I book and pay for a consultation?
                         </h3>
                         <span class="faq-icon text-brand-gold text-2xl font-bold">+</span>
                     </summary>
-                    <div class="faq-answer p-6 pt-0 border-t border-brand-gold/10">
-                        <p class="mt-2 text-brand-light-gray" data-i18n="faq-a3">
+                    <div class="faq-answer p-6 pt-0 border-t border-orange-100">
+                        <p class="mt-2 text-gray-600" data-i18n="faq-a3">
                             You can book by calling or emailing me at the contact details below. Payment details will be shared during the booking process.
                         </p>
                     </div>
@@ -670,7 +641,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-[#060f1d] text-brand-light-gray border-t border-brand-gold/20 pt-16 pb-8">
+    <footer class="bg-slate-900 text-gray-400 border-t border-gray-800 pt-16 pb-8">
         <div class="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
                 <!-- Brand -->
@@ -678,13 +649,13 @@
                     <div class="flex items-center gap-2 mb-4">
                          <span class="text-2xl font-bold text-white font-serif" data-i18n="brand-name">Astro Neeraj Sharma</span>
                     </div>
-                    <p class="text-brand-light-gray/70 mb-6" data-i18n="footer-desc">
+                    <p class="text-gray-400 mb-6" data-i18n="footer-desc">
                         Providing authentic guidance in Vedic Astrology, Vastu, and Numerology to clients worldwide from Indore, MP.
                     </p>
                     <div class="flex space-x-4">
-                        <a href="https://www.facebook.com/astro.neerajsharma" class="text-brand-light-gray hover:text-brand-gold transition-colors"><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg></a>
-                        <a href="https://www.instagram.com/patan.wale.guruji" class="text-brand-light-gray hover:text-brand-gold transition-colors"><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" /></svg></a>
-                        <a href="https://www.youtube.com/@patan.wale.guruji" class="text-brand-light-gray hover:text-brand-gold"><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M19.812 5.418c.86.21 1.532.881 1.742 1.742C22 8.96 22 12 22 12s0 3.04-.446 4.84c-.21.86-.881 1.532-1.742 1.742C18.04 19 12 19 12 19s-6.04 0-7.84-.418c-.86-.21-1.532-.881-1.742-1.742C2 15.04 2 12 2 12s0-3.04.418-4.84c.21-.86.881-1.532 1.742-1.742C5.96 5 12 5 12 5s6.04 0 7.812.418zM9.94 14.582V9.418L14.82 12 9.94 14.582z" clip-rule="evenodd" /></svg></a>
+                        <a href="https://www.facebook.com/astro.neerajsharma" class="text-gray-400 hover:text-white transition-colors"><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg></a>
+                        <a href="https://www.instagram.com/patan.wale.guruji" class="text-gray-400 hover:text-white transition-colors"><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" /></svg></a>
+                        <a href="https://www.youtube.com/@patan.wale.guruji" class="text-gray-400 hover:text-white"><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M19.812 5.418c.86.21 1.532.881 1.742 1.742C22 8.96 22 12 22 12s0 3.04-.446 4.84c-.21.86-.881 1.532-1.742 1.742C18.04 19 12 19 12 19s-6.04 0-7.84-.418c-.86-.21-1.532-.881-1.742-1.742C2 15.04 2 12 2 12s0-3.04.418-4.84c.21-.86.881-1.532 1.742-1.742C5.96 5 12 5 12 5s6.04 0 7.812.418zM9.94 14.582V9.418L14.82 12 9.94 14.582z" clip-rule="evenodd" /></svg></a>
                     </div>
                 </div>
 
@@ -692,10 +663,10 @@
                 <div>
                     <h4 class="text-lg font-bold text-white uppercase tracking-wider mb-4" data-i18n="footer-links">Quick Links</h4>
                     <ul class="space-y-2">
-                        <li><a href="#about" class="hover:text-brand-gold transition-colors" data-i18n="nav-about">About</a></li>
-                        <li><a href="#services" class="hover:text-brand-gold transition-colors" data-i18n="nav-services">Services</a></li>
-                        <li><a href="#testimonials" class="hover:text-brand-gold transition-colors" data-i18n="nav-testimonials">Testimonials</a></li>
-                        <li><a href="#contact" class="hover:text-brand-gold transition-colors" data-i18n="nav-book">Book Consultation</a></li>
+                        <li><a href="#about" class="hover:text-white transition-colors" data-i18n="nav-about">About</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors" data-i18n="nav-services">Services</a></li>
+                        <li><a href="#testimonials" class="hover:text-white transition-colors" data-i18n="nav-testimonials">Testimonials</a></li>
+                        <li><a href="#contact" class="hover:text-white transition-colors" data-i18n="nav-book">Book Consultation</a></li>
                     </ul>
                 </div>
 
@@ -704,22 +675,22 @@
                     <h4 class="text-lg font-bold text-white uppercase tracking-wider mb-4" data-i18n="footer-contact">Contact Info</h4>
                     <ul class="space-y-3 text-sm">
                         <li class="flex items-start">
-                             <span class="text-brand-gold mr-2">📍</span>
+                             <span class="text-brand-accent mr-2">📍</span>
                              <span>Indore, Madhya Pradesh<br>India</span>
                         </li>
                         <li class="flex items-center">
-                             <span class="text-brand-gold mr-2">📞</span>
-                             <a href="tel:+917987909015" class="hover:text-brand-gold">+91-7987909015</a>
+                             <span class="text-brand-accent mr-2">📞</span>
+                             <a href="tel:+917987909015" class="hover:text-white">+91-7987909015</a>
                         </li>
                         <li class="flex items-center">
-                             <span class="text-brand-gold mr-2">✉️</span>
-                             <a href="mailto:gurujipatanwale@gmail.com" class="hover:text-brand-gold">gurujipatanwale@gmail.com</a>
+                             <span class="text-brand-accent mr-2">✉️</span>
+                             <a href="mailto:gurujipatanwale@gmail.com" class="hover:text-white">gurujipatanwale@gmail.com</a>
                         </li>
                     </ul>
                 </div>
             </div>
             
-            <div class="text-center pt-8 border-t border-brand-light-gray/10 text-sm text-brand-light-gray/50">
+            <div class="text-center pt-8 border-t border-gray-800 text-sm text-gray-500">
                 &copy; 2025 Astro Neeraj Sharma. All rights reserved.
             </div>
         </div>
@@ -1005,10 +976,12 @@
         menuButton.addEventListener('click', toggleMenu);
         mobileMenuBackdrop.addEventListener('click', toggleMenu);
 
+        // Close menu when a link is clicked
         mobileMenu.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', toggleMenu);
         });
 
+        // SCROLL REVEAL LOGIC
         const observerOptions = {
             root: null,
             rootMargin: '0px',
