@@ -9,6 +9,15 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair Display', serif;
 }
 
+/* Hindi Font Class - Applied dynamically when Hindi is selected */
+body.lang-hi {
+    font-family: 'Tiro Devanagari Hindi', serif;
+}
+body.lang-hi h1, body.lang-hi h2, body.lang-hi h3 {
+    font-family: 'Tiro Devanagari Hindi', serif;
+    line-height: 1.4; /* Hindi characters need slightly more height */
+}
+
 /* SCROLL REVEAL ANIMATION CLASSES */
 .reveal {
     opacity: 0;
