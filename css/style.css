@@ -22,7 +22,7 @@ body.lang-hi h1, body.lang-hi h2, body.lang-hi h3 {
 /* SCROLL REVEAL ANIMATION CLASSES */
 .reveal {
     opacity: 0;
-    transform: translateY(30px); /* Reduced movement for a subtler effect */
+    transform: translateY(30px);
     transition: all 0.8s ease-out;
 }
 
@@ -53,8 +53,8 @@ details > .faq-answer {
 
 details[open] > .faq-answer {
     opacity: 1;
-    max-height: 500px; /* Arbitrary large height for transition */
-    padding-top: 1rem; /* Add spacing when open */
+    max-height: 500px;
+    padding-top: 1rem;
 }
 
 details:not([open]) .faq-icon {
@@ -86,4 +86,15 @@ details[open] .faq-icon {
     outline: none;
     border-color: #d4af37;
     box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.2);
+}
+
+/* --- SLIDER UTILITIES --- */
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
