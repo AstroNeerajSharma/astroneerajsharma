@@ -6,10 +6,21 @@ body {
     overflow-x: hidden; /* Prevent horizontal scroll on body */
 }
 
-/* Lock body scroll when menu is open */
+/* === MOBILE SCROLL LOCK (The Nuclear Option) === */
+/* Targets both HTML and BODY when menu is open */
+html.menu-open,
 body.menu-open {
     overflow: hidden !important;
-    height: 100vh;
+    height: 100% !important;
+    width: 100% !important;
+    position: fixed !important; /* Fixes iOS scroll bounce */
+    touch-action: none; /* Disables touch interactions on the background */
+}
+
+/* Allow scrolling ONLY inside the menu */
+#mobile-menu {
+    touch-action: pan-y; /* Enable vertical scroll inside menu */
+    overscroll-behavior: contain; /* Traps scroll inside the menu */
 }
 
 /* Elegant serif font for all headings */
